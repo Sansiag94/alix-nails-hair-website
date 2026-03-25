@@ -331,10 +331,11 @@ function renderFooter() {
         <section class="footer-section">
           <h3>Navegación</h3>
           <ul class="footer-links">${pageLinks}</ul>
-          <div class="footer-legal">
-            <h3>Legal</h3>
-            <ul class="footer-links">${legalLinks}</ul>
-          </div>
+        </section>
+
+        <section class="footer-section footer-legal">
+          <h3>Legal</h3>
+          <ul class="footer-links">${legalLinks}</ul>
         </section>
 
         <section class="footer-section">
