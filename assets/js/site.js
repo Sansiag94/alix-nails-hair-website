@@ -347,7 +347,6 @@ function renderFooter() {
           </ul>
           <div class="footer-hours">
             <h3>Horarios</h3>
-            <p>${SITE.hoursNote}</p>
             <ul class="footer-links">${hours}</ul>
           </div>
         </section>
