@@ -62,8 +62,8 @@
 
       <section class="section">
         <div class="container booking-layout">
-          <form class="form-shell" data-booking-form>
-            <div class="section-heading">
+          <form class="form-shell booking-form-shell" data-booking-form>
+            <div class="section-heading booking-form-heading">
               <span class="eyebrow">Formulario de cita</span>
               <h2>Comparte tu idea y prepara tu solicitud.</h2>
               <p>
@@ -125,13 +125,13 @@
             </div>
 
             <p class="status-text" data-form-status aria-live="polite"></p>
-            <p>
+            <p class="booking-legal">
               Al preparar tu solicitud aceptas los
               <a class="text-link" href="terms.html">términos y condiciones</a>
               y la
               <a class="text-link" href="policy.html">política de privacidad</a>.
             </p>
-            <div class="button-row">
+            <div class="button-row booking-actions">
               <button class="button" type="submit">Preparar solicitud en WhatsApp</button>
               <a class="button button-secondary" data-whatsapp-link target="_blank" rel="noreferrer">WhatsApp directo</a>
             </div>
@@ -146,7 +146,7 @@
               />
             </div>
 
-            <article class="feature-panel">
+            <article class="feature-panel booking-aside-card">
               <span class="eyebrow">Antes de venir</span>
               <ul class="bullet-list">
                 <li>Confirma disponibilidad antes de desplazarte al salón.</li>
@@ -156,9 +156,9 @@
               </ul>
             </article>
 
-            <div data-last-booking></div>
+            <div class="booking-summary-slot" data-last-booking></div>
 
-            <article class="contact-panel">
+            <article class="contact-panel booking-aside-card">
               <span class="eyebrow">Contacto</span>
               <p><strong>WhatsApp:</strong> <span data-phone></span></p>
               <p><strong>Dirección:</strong> <span data-address></span></p>

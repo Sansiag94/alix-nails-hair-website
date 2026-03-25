@@ -908,6 +908,7 @@ p {
 .contact-stack {
   display: grid;
   gap: var(--space-3);
+  align-content: start;
 }
 
 .channel-card,
@@ -973,6 +974,28 @@ p {
   gap: 1rem;
 }
 
+.booking-form-shell {
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  gap: 1.25rem;
+}
+
+.booking-form-heading {
+  max-width: 35rem;
+  margin-bottom: var(--space-3);
+}
+
+.booking-form-heading h2 {
+  max-width: 12ch;
+  font-size: clamp(2.4rem, 4.2vw, 3.8rem);
+  line-height: 1.02;
+}
+
+.booking-form-heading p {
+  max-width: 33rem;
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
 .form-grid {
   display: grid;
   gap: 1rem;
@@ -1010,10 +1033,47 @@ textarea {
   min-height: 1.5rem;
   color: var(--color-accent-deep);
   font-weight: 600;
+  margin-top: 0.25rem;
 }
 
 .summary-card p {
   margin-top: 0.45rem;
+}
+
+.booking-legal {
+  max-width: 34rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.booking-actions {
+  padding-top: 0.25rem;
+}
+
+.booking-summary-slot {
+  display: grid;
+}
+
+.booking-summary-slot .summary-card,
+.booking-aside-card {
+  padding: clamp(1.35rem, 2.4vw, 1.8rem);
+}
+
+.booking-layout .portrait-panel img {
+  min-height: 0;
+  aspect-ratio: 4 / 5;
+}
+
+.booking-layout .feature-panel ul {
+  gap: 0.9rem;
+}
+
+.booking-layout .contact-panel {
+  gap: 0.9rem;
+}
+
+.booking-layout .contact-panel .button-row {
+  margin-top: 0.35rem;
 }
 
 .muted-card {
