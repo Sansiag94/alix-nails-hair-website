@@ -880,6 +880,14 @@ p {
   align-items: start;
 }
 
+.contact-layout-balanced {
+  align-items: stretch;
+}
+
+.contact-layout-balanced > * {
+  height: 100%;
+}
+
 .contact-stack {
   display: grid;
   gap: var(--space-3);
@@ -914,6 +922,10 @@ p {
   height: 100%;
   min-height: 320px;
   border: 0;
+}
+
+.contact-layout-balanced .map-shell iframe {
+  min-height: 100%;
 }
 
 .contact-panel {
