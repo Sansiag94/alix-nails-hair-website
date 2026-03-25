@@ -504,6 +504,12 @@ p {
 
 .hero-card .info-list strong {
   font-size: 1rem;
+  line-height: 1.4;
+}
+
+.info-list-subline {
+  display: block;
+  margin-top: 0.15rem;
 }
 
 .section-heading {
