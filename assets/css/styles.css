@@ -74,17 +74,26 @@ textarea {
 
 .skip-link {
   position: absolute;
-  top: -40px;
+  top: 1rem;
   left: 1rem;
   z-index: 200;
   padding: 0.75rem 1rem;
   border-radius: 999px;
   background: var(--color-ink);
   color: var(--color-white);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(calc(-100% - 1rem));
+  transition:
+    opacity 160ms ease-in-out,
+    transform 160ms ease-in-out;
 }
 
-.skip-link:focus {
-  top: 1rem;
+.skip-link:focus,
+.skip-link:focus-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 .container {
