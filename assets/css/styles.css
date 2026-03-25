@@ -789,6 +789,14 @@ p {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.results-lead-grid {
+  margin-bottom: var(--space-4);
+}
+
+.results-gallery-grid {
+  margin-top: var(--space-2);
+}
+
 .home-gallery-grid {
   display: grid;
   gap: var(--space-3);

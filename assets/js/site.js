@@ -23,7 +23,6 @@ const SITE = {
     { href: "index.html", label: "Inicio", page: "home" },
     { href: "about.html", label: "Nosotros", page: "about" },
     { href: "services.html", label: "Servicios", page: "services" },
-    { href: "gallery.html", label: "Galería", page: "gallery" },
     { href: "contact.html", label: "Contacto", page: "contact" }
   ],
   legalNav: [
