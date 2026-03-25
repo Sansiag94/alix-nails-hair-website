@@ -218,6 +218,7 @@ function renderHeader() {
   if (!mount) return;
   const page = document.body.dataset.page;
   const links = SITE.nav
+    .filter(([, , key]) => key !== "booking")
     .map(
       ([href, label, key]) =>
         `<a class="nav-link ${page === key ? "is-active" : ""}" href="${href}">${label}</a>`
@@ -235,6 +236,7 @@ function renderHeader() {
         </button>
         <nav class="site-nav" aria-label="Navegación principal">
           ${links}
+          <a class="button button-small" href="booking.html">Reservar</a>
         </nav>
       </div>
     </header>`;
