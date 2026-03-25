@@ -129,6 +129,7 @@ h4 {
   letter-spacing: -0.02em;
   line-height: 1.08;
   text-wrap: balance;
+  overflow-wrap: anywhere;
 }
 
 h1 {
@@ -148,6 +149,7 @@ p {
   color: var(--color-muted);
   line-height: 1.8;
   font-size: 1rem;
+  overflow-wrap: anywhere;
 }
 
 .button-row {
@@ -526,6 +528,11 @@ p {
   max-width: 44rem;
 }
 
+.page-hero p,
+.section-heading p {
+  max-width: 40rem;
+}
+
 .experience-shell,
 .split-grid,
 .proof-layout,
@@ -534,7 +541,7 @@ p {
 .footer-grid,
 .cta-band {
   display: grid;
-  gap: var(--space-4);
+  gap: var(--space-5);
 }
 
 .experience-shell {
@@ -588,6 +595,7 @@ p {
 .service-card {
   overflow: hidden;
   display: grid;
+  height: 100%;
 }
 
 .service-card:hover {
@@ -627,6 +635,8 @@ p {
   display: grid;
   gap: 0.85rem;
   padding: var(--space-3);
+  height: 100%;
+  align-content: start;
 }
 
 .service-meta {
@@ -699,6 +709,7 @@ p {
   display: grid;
   gap: 1rem;
   padding: var(--space-3);
+  height: 100%;
 }
 
 .detail-lead {
@@ -739,6 +750,9 @@ p {
 
 .testimonial {
   padding: var(--space-3);
+  display: grid;
+  align-content: start;
+  height: 100%;
 }
 
 .testimonial-stars {
@@ -781,6 +795,8 @@ p {
   color: var(--color-ink);
   font-size: 0.9rem;
   backdrop-filter: blur(10px);
+  line-height: 1.5;
+  overflow-wrap: anywhere;
 }
 
 .gallery-card--wide {
@@ -807,6 +823,7 @@ p {
   transition:
     transform 220ms ease-in-out,
     box-shadow 220ms ease-in-out;
+  height: 100%;
 }
 
 .page-preview-card:hover {
@@ -860,6 +877,15 @@ p {
 .form-shell,
 .legal-card {
   padding: var(--space-3);
+}
+
+.channel-card,
+.page-preview-card,
+.contact-panel,
+.feature-panel,
+.summary-card {
+  display: grid;
+  align-content: start;
 }
 
 .channel-card:hover {
@@ -963,6 +989,13 @@ textarea {
 .cta-copy {
   display: grid;
   gap: 0.85rem;
+}
+
+.service-card-body .text-link,
+.service-detail .text-link,
+.page-preview-card .text-link,
+.channel-card .text-link {
+  margin-top: auto;
 }
 
 .legal-stack {
