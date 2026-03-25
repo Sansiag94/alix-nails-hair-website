@@ -2,7 +2,11 @@ const SITE = {
   name: "Alix Nails & Hair",
   tagline: "Nail & Hair Spa en Condado Mall",
   description:
-    "Alix Nails & Hair es un Nail & Hair Spa en Condado Mall con reservas por WhatsApp, cuidado de uñas, estilismo capilar y atención por cita.",
+    "Alix Nails & Hair es un Nail & Hair Spa en Condado Mall con reservas por WhatsApp, servicios de uñas y cabello, y horarios amplios durante toda la semana.",
+  logoPrimary: "assets/img/alix-nails-hair-logo.png",
+  logoTransparent: "assets/img/alix-nails-hair-logo-transparent.png",
+  heroImage: "assets/img/alix-nail-spa-hero-panama.jpg",
+  nailsImage: "assets/img/alix-manicure-service-panama.jpg",
   phoneRaw: "+50762765890",
   phoneDisplay: "+507 6276-5890",
   whatsapp: "https://wa.me/50762765890",
@@ -10,24 +14,16 @@ const SITE = {
     "https://www.instagram.com/alixnailsandhair?igsh=MWZuYjRzMTVmazh3Yw==",
   address: "Condado Mall, primer piso, local 50.",
   mapQuery: "Condado Mall, Primer Piso, Local 50",
-  hoursNote: "Atención por cita y confirmación directa por WhatsApp.",
+  hoursNote: "Lunes a sábado de 9:00 AM a 7:00 PM · Domingo de 10:00 AM a 5:00 PM.",
   hours: [
-    "Lunes a sábado: horario sujeto a confirmación",
-    "Domingo: consulta disponibilidad"
-  ],
-  navHome: [
-    { href: "#top", label: "Inicio", section: "top" },
-    { href: "#experience", label: "Experiencia", section: "experience" },
-    { href: "#services", label: "Servicios", section: "services" },
-    { href: "#testimonials", label: "Reseñas", section: "testimonials" },
-    { href: "#gallery", label: "Galería", section: "gallery" },
-    { href: "#faq", label: "FAQ", section: "faq" },
-    { href: "#contact", label: "Contacto", section: "contact" }
+    "Lunes a sábado: 9:00 AM a 7:00 PM",
+    "Domingo: 10:00 AM a 5:00 PM"
   ],
   navPages: [
     { href: "index.html", label: "Inicio", page: "home" },
     { href: "about.html", label: "Nosotros", page: "about" },
     { href: "services.html", label: "Servicios", page: "services" },
+    { href: "gallery.html", label: "Galería", page: "gallery" },
     { href: "contact.html", label: "Contacto", page: "contact" }
   ],
   legalNav: [
@@ -36,9 +32,9 @@ const SITE = {
   ],
   serviceGroups: [
     {
-      title: "Manos en calma",
+      title: "Ritual de uñas",
       lead:
-        "Una selección de manicure, maquillaje de uñas y acabados con enfoque en armonía visual, duración y detalle.",
+        "Un espacio para manicure, maquillaje de uñas y acabados delicados que priorizan limpieza visual, armonía y duración.",
       items: [
         "Manicure y pedicure",
         "Maquillaje de uñas",
@@ -50,7 +46,7 @@ const SITE = {
     {
       title: "Cabello con movimiento",
       lead:
-        "Cortes, brushing, secados y peinados pensados para acompañar tu estilo con ligereza y presencia.",
+        "Cortes, brushing, secados y peinados pensados para acompañar tu estilo con ligereza, suavidad y presencia.",
       items: [
         "Hair styling",
         "Haircut",
@@ -62,7 +58,7 @@ const SITE = {
     {
       title: "Color y ocasión",
       lead:
-        "Servicios para quienes buscan una cita más personalizada, un cambio visible o preparación para un momento especial.",
+        "Servicios para quienes buscan un cambio visible, preparación para evento o una cita guiada con más personalización.",
       items: [
         "Hair dyeing y coloración",
         "Retoque de raíz",
@@ -74,19 +70,19 @@ const SITE = {
   ],
   values: [
     {
-      title: "Ritmo sereno",
+      title: "Un ritmo sereno",
       text:
-        "La experiencia se diseña para que cada cita se sienta clara, cómoda y con el tiempo necesario."
+        "La experiencia se construye para que reservar, llegar y vivir la cita se sienta claro, cómodo y sin prisa innecesaria."
     },
     {
-      title: "Detalle que permanece",
+      title: "Detalle que se nota",
       text:
-        "El resultado final importa tanto como la sensación de orden, limpieza y equilibrio en cada acabado."
+        "Cada acabado busca equilibrio, limpieza visual y una sensación final pulida tanto en uñas como en cabello."
     },
     {
-      title: "Acompañamiento cercano",
+      title: "Atención cercana",
       text:
-        "Desde la primera consulta hasta la confirmación de tu cita, todo busca sentirse simple y bien atendido."
+        "Escuchamos la idea, revisamos tiempos y acompañamos el proceso para que todo fluya desde el primer mensaje."
     }
   ],
   process: [
@@ -96,14 +92,14 @@ const SITE = {
         "Cuéntanos qué servicio te interesa y, si quieres, envía una referencia para orientar mejor la cita."
     },
     {
-      title: "Confirmamos tu momento",
+      title: "Confirmamos horario",
       text:
-        "Revisamos horario, duración estimada y cualquier detalle importante antes de confirmar disponibilidad."
+        "Revisamos tu disponibilidad, el tiempo estimado del servicio y cualquier detalle importante antes de confirmar."
     },
     {
-      title: "Disfruta la experiencia",
+      title: "Vive tu momento",
       text:
-        "La cita se vive con foco en bienestar, atención cuidada y un resultado que se sienta tuyo."
+        "La cita se trabaja con calma, atención y un resultado pensado para sentirse tuyo al salir del salón."
     }
   ],
   faq: [
@@ -120,12 +116,12 @@ const SITE = {
     {
       question: "¿Dónde están ubicados?",
       answer:
-        "Nos encuentras en Condado Mall, primer piso, local 50, con acceso directo al mapa desde el sitio."
+        "Estamos en Condado Mall, primer piso, local 50, con acceso directo al mapa desde el sitio."
     },
     {
-      question: "¿Atienden solo con cita?",
+      question: "¿Cuáles son sus horarios?",
       answer:
-        "La atención se organiza por cita para cuidar mejor los tiempos y confirmar disponibilidad con antelación."
+        "Abrimos de lunes a sábado de 9:00 AM a 7:00 PM y los domingos de 10:00 AM a 5:00 PM."
     }
   ],
   contactChannels: [
@@ -219,13 +215,9 @@ function sharedActions(page) {
 }
 
 function createNavLink(item, page) {
-  const isHome = page === "home";
-  const isActive = isHome ? item.section === "top" : item.page === page;
-  const sectionAttrs =
-    isHome && item.section ? `data-section-link="${item.section}"` : "";
+  const isActive = item.page === page;
   const ariaCurrent = isActive ? ' aria-current="page"' : "";
-
-  return `<a class="nav-link${isActive ? " is-active" : ""}" href="${item.href}" ${sectionAttrs}${ariaCurrent}>${item.label}</a>`;
+  return `<a class="nav-link${isActive ? " is-active" : ""}" href="${item.href}"${ariaCurrent}>${item.label}</a>`;
 }
 
 function closeNav(toggle, nav) {
@@ -249,8 +241,7 @@ function renderHeader() {
   if (!mount) return;
 
   const page = document.body.dataset.page;
-  const navItems = page === "home" ? SITE.navHome : SITE.navPages;
-  const navLinks = navItems.map((item) => createNavLink(item, page)).join("");
+  const navLinks = SITE.navPages.map((item) => createNavLink(item, page)).join("");
   const actions = sharedActions(page);
   const headerTarget = actions.header.external
     ? `target="_blank" rel="noreferrer"`
@@ -261,7 +252,7 @@ function renderHeader() {
     <header class="site-header">
       <div class="container nav-shell">
         <a class="brand" href="index.html" aria-label="Ir al inicio de ${SITE.name}">
-          <img src="assets/img/alix-nails-hair.jpg" alt="Logo de ${SITE.name}" width="72" height="72" />
+          <img class="brand-logo" src="${SITE.logoPrimary}" alt="Logo de ${SITE.name}" width="72" height="72" />
           <span class="brand-copy">
             <strong>${SITE.name}</strong>
             <small>${SITE.tagline}</small>
@@ -326,7 +317,7 @@ function renderFooter() {
     <footer class="site-footer">
       <div class="container footer-grid">
         <section class="footer-brand">
-          <img src="assets/img/alix-nails-hair.jpg" alt="Logo de ${SITE.name}" width="88" height="88" />
+          <img class="footer-logo" src="${SITE.logoTransparent}" alt="Logo de ${SITE.name}" width="140" height="140" />
           <div class="footer-copy">
             <h2>${SITE.name}</h2>
             <p>${SITE.description}</p>
@@ -378,8 +369,8 @@ function renderFooter() {
       </div>
 
       <div class="container footer-bottom">
-        <small data-current-year>&copy; ${year} ${SITE.name}. Todos los derechos reservados.</small>
-        <small>Nail & Hair Spa en Condado Mall con reservas por WhatsApp.</small>
+        <small>&copy; ${year} ${SITE.name}. Todos los derechos reservados.</small>
+        <small>Nail & Hair Spa en Condado Mall con horario extendido toda la semana.</small>
       </div>
     </footer>
 
@@ -535,51 +526,6 @@ function setupReveal() {
   elements.forEach((element) => observer.observe(element));
 }
 
-function setupSectionSpy() {
-  if (document.body.dataset.page !== "home") return;
-
-  const links = selectAll("[data-section-link]");
-  const sections = links
-    .map((link) => document.getElementById(link.dataset.sectionLink))
-    .filter(Boolean);
-
-  if (!sections.length) return;
-
-  const updateActive = (sectionId) => {
-    links.forEach((link) => {
-      const isActive = link.dataset.sectionLink === sectionId;
-      link.classList.toggle("is-active", isActive);
-      if (isActive) {
-        link.setAttribute("aria-current", "page");
-      } else {
-        link.removeAttribute("aria-current");
-      }
-    });
-  };
-
-  updateActive("top");
-
-  if (!("IntersectionObserver" in window)) return;
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      const visible = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
-      if (visible?.target.id) {
-        updateActive(visible.target.id);
-      }
-    },
-    {
-      rootMargin: "-35% 0px -45% 0px",
-      threshold: [0.2, 0.45, 0.7]
-    }
-  );
-
-  sections.forEach((section) => observer.observe(section));
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   renderHeader();
   renderFooter();
@@ -588,5 +534,4 @@ document.addEventListener("DOMContentLoaded", () => {
   renderDynamicSections();
   setupScrollState();
   setupReveal();
-  setupSectionSpy();
 });
