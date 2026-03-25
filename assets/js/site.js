@@ -235,7 +235,6 @@ function renderHeader() {
         </button>
         <nav class="site-nav" aria-label="Navegación principal">
           ${links}
-          <a class="button button-small" href="booking.html">Reservar</a>
         </nav>
       </div>
     </header>`;
