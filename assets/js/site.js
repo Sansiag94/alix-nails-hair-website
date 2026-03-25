@@ -2,7 +2,7 @@ const SITE = {
   name: "Alix Nails & Hair",
   tagline: "Nails, hair & styling en Condado Mall",
   description:
-    "Salón en Condado Mall dedicado a uñas, hair styling, color y rituales de belleza con un acabado elegante y contemporáneo.",
+    "Nails salon y hair salon en Condado Mall con reservas por WhatsApp, diseño de uñas, color, cortes y peinados.",
   phoneRaw: "+50762765890",
   phoneDisplay: "+507 6276-5890",
   whatsapp: "https://wa.me/50762765890",
@@ -10,65 +10,61 @@ const SITE = {
     "https://www.instagram.com/alixnailsandhair?igsh=MWZuYjRzMTVmazh3Yw==",
   address: "Condado Mall, primer piso, local 50.",
   mapQuery: "Condado Mall, Primer Piso, Local 50",
-  hoursNote:
-    "Agenda privada por WhatsApp. Confirmamos horarios, técnicas y disponibilidad según el servicio.",
-  nav: [
-    ["index.html", "Inicio", "home"],
-    ["about.html", "Nosotros", "about"],
-    ["services.html", "Servicios", "services"],
-    ["booking.html", "Reservas", "booking"],
-    ["contact.html", "Contacto", "contact"]
+  hoursNote: "Atención por cita y confirmación por WhatsApp.",
+  hours: [
+    "Lunes a sábado: horario sujeto a confirmación",
+    "Domingo: consultar disponibilidad"
+  ],
+  navHome: [
+    { href: "#top", label: "Inicio", section: "top" },
+    { href: "#about", label: "Nosotros", section: "about" },
+    { href: "#services", label: "Servicios", section: "services" },
+    { href: "#testimonials", label: "Reseñas", section: "testimonials" },
+    { href: "#faq", label: "FAQ", section: "faq" },
+    { href: "#contact", label: "Contacto", section: "contact" }
+  ],
+  navPages: [
+    { href: "index.html", label: "Inicio", page: "home" },
+    { href: "about.html", label: "Nosotros", page: "about" },
+    { href: "services.html", label: "Servicios", page: "services" },
+    { href: "contact.html", label: "Contacto", page: "contact" }
   ],
   legalNav: [
-    ["policy.html", "Política de privacidad", "policy"],
-    ["terms.html", "Términos y condiciones", "terms"]
+    { href: "policy.html", label: "Política de privacidad", page: "policy" },
+    { href: "terms.html", label: "Términos y condiciones", page: "terms" }
   ],
-  featured: [
+  serviceGroups: [
     {
-      t: "Uñas",
-      d: "Manicure, gel y nail art con líneas finas, brillo impecable y una ejecución cuidada.",
-      tags: ["Nail art", "Gel", "Acabado pulido"]
-    },
-    {
-      t: "Styling",
-      d: "Blowouts, peinados y brushing con movimiento suave, estructura limpia y presencia duradera.",
-      tags: ["Blowout", "Styling", "Peinados"]
-    },
-    {
-      t: "Color y corte",
-      d: "Corte, coloración y refresh capilar pensados para verse refinados desde el primer día.",
-      tags: ["Color", "Cut", "Gloss tone"]
-    }
-  ],
-  groups: [
-    {
-      t: "Uñas",
-      l: "Un enfoque preciso para manos y pies impecables, con detalle, brillo y armonía visual.",
+      title: "Uñas",
+      lead:
+        "Servicios para manos y pies con enfoque en limpieza, duración y diseño bien resuelto.",
       items: [
         "Maquillaje de uñas",
-        "Nail art minimalista o statement",
-        "Manicure y pedicure con acabado spa",
-        "Gel, refuerzo y mantenimiento",
-        "Retiro y cuidado de la uña natural"
+        "Nail art",
+        "Manicure y pedicure",
+        "Gel y refuerzo",
+        "Mantenimiento"
       ]
     },
     {
-      t: "Cabello",
-      l: "Diseñado para cabellos con movimiento, estructura y un acabado pulido que se siente fresco.",
+      title: "Cabello",
+      lead:
+        "Opciones para diario, evento o refresh de imagen con acabado pulido y fácil de llevar.",
       items: [
-        "Hair styling para diario o evento",
-        "Haircut y perfilado",
-        "Hair dressing y brushing pulido",
-        "Secados y peinados con volumen",
-        "Tratamientos capilares de nutrición"
+        "Hair styling",
+        "Haircut",
+        "Hair dressing",
+        "Secados y peinados",
+        "Tratamientos capilares"
       ]
     },
     {
-      t: "Color y ocasión",
-      l: "Servicios para refresh de imagen, ocasiones especiales y cambios que merecen una consulta más dedicada.",
+      title: "Color y ocasión",
+      lead:
+        "Ideal para quienes buscan una cita más personalizada o una preparación especial.",
       items: [
         "Hair dyeing y coloración",
-        "Retoque de raíz y gloss",
+        "Retoque de raíz",
         "Balayage sujeto a valoración",
         "Maquillaje social",
         "Peinados para eventos"
@@ -76,204 +72,209 @@ const SITE = {
     }
   ],
   values: [
-    [
-      "Criterio estético",
-      "Cada cita empieza con una mirada atenta: entendemos estilo, energía, ocasión y mantenimiento."
-    ],
-    [
-      "Resultado equilibrado",
-      "El resultado busca verse impecable sin exageración, con presencia, textura y equilibrio."
-    ],
-    [
-      "Experiencia fluida",
-      "Desde Condado Mall hasta cada interacción digital, todo está pensado para sentirse ágil y cómodo."
-    ]
+    {
+      title: "Atención cercana",
+      text:
+        "Cada cita empieza entendiendo el resultado que quieres y el tiempo real que necesitas."
+    },
+    {
+      title: "Acabado cuidado",
+      text:
+        "La prioridad está en un resultado limpio, favorecedor y consistente con tu estilo."
+    },
+    {
+      title: "Proceso simple",
+      text:
+        "Reservar, confirmar y llegar al salón debe sentirse claro, rápido y cómodo."
+    }
   ],
   process: [
-    [
-      "1. Consulta privada",
-      "Cuéntanos qué quieres lograr y comparte referencias para construir una cita más afinada."
-    ],
-    [
-      "2. Diseño de la cita",
-      "Definimos servicio, timing y detalles por WhatsApp para que la experiencia llegue ya editada."
-    ],
-    [
-      "3. Acabado impecable",
-      "Trabajamos textura, forma y presencia para que el look se vea refinado y fácil de llevar."
-    ]
+    {
+      title: "1. Cuéntanos tu idea",
+      text:
+        "Comparte el servicio que buscas y, si quieres, una referencia para orientar mejor la cita."
+    },
+    {
+      title: "2. Confirmamos disponibilidad",
+      text:
+        "Revisamos horario, duración y detalles por WhatsApp antes de darte la confirmación."
+    },
+    {
+      title: "3. Realizamos el servicio",
+      text:
+        "Trabajamos uñas o cabello con foco en detalle, comodidad y resultado final."
+    }
   ],
   faq: [
-    [
-      "¿Cómo reservo una cita?",
-      "Puedes usar el formulario de reservas o escribir por WhatsApp. En ambos casos la conversación queda directa y clara."
-    ],
-    [
-      "¿Puedo pedir cotización antes?",
-      "Sí. Puedes enviarnos una consulta general y compartir referencias visuales para una recomendación más precisa."
-    ],
-    [
-      "¿Dónde están ubicados?",
-      "Estamos en Condado Mall, primer piso, local 50."
-    ]
+    {
+      question: "¿Cómo reservo una cita?",
+      answer:
+        "Puedes usar el formulario de reservas o escribir por WhatsApp. En ambos casos la coordinación se confirma directamente con el salón."
+    },
+    {
+      question: "¿Puedo pedir cotización antes de reservar?",
+      answer:
+        "Sí. Puedes escribir por WhatsApp con una referencia de uñas o cabello y te orientamos según el servicio."
+    },
+    {
+      question: "¿Dónde están ubicados?",
+      answer:
+        "Estamos en Condado Mall, primer piso, local 50, con enlace directo al mapa dentro del sitio."
+    },
+    {
+      question: "¿Atienden por orden de llegada?",
+      answer:
+        "La recomendación es reservar o confirmar por WhatsApp para evitar tiempos de espera."
+    }
   ],
-  channels: [
-    [
-      "WhatsApp directo",
-      "El canal más directo para pedir precio, revisar disponibilidad y coordinar tu cita con contexto.",
-      "https://wa.me/50762765890",
-      "Escribir por WhatsApp"
-    ],
-    [
-      "Llamada",
-      "Si prefieres una atención más inmediata, también puedes llamarnos al número del salón.",
-      "tel:+50762765890",
-      "Llamar ahora"
-    ],
-    [
-      "Instagram",
-      "Explora referencias, textura visual y el universo estético del salón antes de tu visita.",
-      "https://www.instagram.com/alixnailsandhair?igsh=MWZuYjRzMTVmazh3Yw==",
-      "Ver Instagram"
-    ],
-    [
-      "Ubicación",
-      "Encuéntranos en Condado Mall, primer piso, local 50, con acceso simple y práctico.",
-      "",
-      "Abrir en Google Maps"
-    ]
-  ],
-  gallery: [
-    [
-      "Acabados espejo",
-      "Inspiración para uñas pulidas, elegantes y perfectamente resueltas.",
-      "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80",
-      "Detalle de un servicio de uñas y belleza"
-    ],
-    [
-      "Movimiento preciso",
-      "Peinados con caída suave, dirección y un acabado limpio y contemporáneo.",
-      "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80",
-      "Servicio de estilismo y cuidado capilar"
-    ],
-    [
-      "Color con profundidad",
-      "Refresh y coloración para transformar la imagen con sutileza y presencia.",
-      "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=80",
-      "Mujer con cabello peinado y color trabajado"
-    ],
-    [
-      "Occasion beauty",
-      "Beauty styling y maquillaje para elevar una ocasión importante con buen gusto.",
-      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80",
-      "Maquillaje profesional con acabado elegante"
-    ],
-    [
-      "Ritual sensorial",
-      "Momentos tranquilos con foco en confort, textura y atención bien medida.",
-      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80",
-      "Ambiente relajado de belleza y cuidado personal"
-    ],
-    [
-      "Estilo cotidiano",
-      "Looks versátiles con una estética pulida para agendas reales y activas.",
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80",
-      "Look de belleza y bienestar con estilo natural"
-    ]
+  contactChannels: [
+    {
+      title: "WhatsApp",
+      text:
+        "La vía más rápida para pedir disponibilidad, cotizar un servicio o enviar una referencia.",
+      href: "https://wa.me/50762765890",
+      label: "Escribir ahora"
+    },
+    {
+      title: "Instagram",
+      text:
+        "Útil para ver inspiración, acabados y referencias visuales antes de tu cita.",
+      href:
+        "https://www.instagram.com/alixnailsandhair?igsh=MWZuYjRzMTVmazh3Yw==",
+      label: "Ver perfil"
+    },
+    {
+      title: "Llamada",
+      text:
+        "Si prefieres hablar directo con el salón, también puedes llamar al número principal.",
+      href: "tel:+50762765890",
+      label: "Llamar"
+    },
+    {
+      title: "Ubicación",
+      text:
+        "Encuéntranos en Condado Mall, primer piso, local 50, con acceso directo al mapa.",
+      href: "",
+      label: "Abrir mapa"
+    }
   ]
 };
 
 window.SITE = SITE;
 
-const qs = (s) => document.querySelector(s);
-const qsa = (s) => [...document.querySelectorAll(s)];
-const mapUrl = () =>
-  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+const selectOne = (selector) => document.querySelector(selector);
+const selectAll = (selector) => [...document.querySelectorAll(selector)];
+
+function mapUrl() {
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
     SITE.mapQuery
   )}`;
-const embedMap = () =>
-  `https://www.google.com/maps?q=${encodeURIComponent(
-    SITE.mapQuery
-  )}&z=16&output=embed`;
-
-function cardList(items, renderer) {
-  return items.map((item) => renderer(item)).join("").trim();
 }
 
-function fillSharedContent() {
-  qsa("[data-business-name]").forEach((el) => (el.textContent = SITE.name));
-  qsa("[data-tagline]").forEach((el) => (el.textContent = SITE.tagline));
-  qsa("[data-address]").forEach((el) => (el.textContent = SITE.address));
-  qsa("[data-phone]").forEach((el) => (el.textContent = SITE.phoneDisplay));
-  qsa("[data-booking-note]").forEach((el) => (el.textContent = SITE.hoursNote));
-  qsa("[data-whatsapp-link]").forEach((el) => (el.href = SITE.whatsapp));
-  qsa("[data-instagram-link]").forEach((el) => (el.href = SITE.instagram));
-  qsa("[data-phone-link]").forEach((el) => (el.href = `tel:${SITE.phoneRaw}`));
-  qsa("[data-map-link]").forEach((el) => (el.href = mapUrl()));
-  qsa("[data-map-embed]").forEach((el) => (el.src = embedMap()));
+function mapEmbedUrl() {
+  return `https://www.google.com/maps?q=${encodeURIComponent(
+    SITE.mapQuery
+  )}&z=16&output=embed`;
 }
 
 function renderHeader() {
-  const mount = qs("[data-site-header]");
+  const mount = selectOne("[data-site-header]");
   if (!mount) return;
+
   const page = document.body.dataset.page;
-  const links = SITE.nav
-    .filter(([, , key]) => key !== "booking")
-    .map(
-      ([href, label, key]) =>
-        `<a class="nav-link ${page === key ? "is-active" : ""}" href="${href}">${label}</a>`
-    )
+  const navItems = page === "home" ? SITE.navHome : SITE.navPages;
+  const navLinks = navItems
+    .map((item) => {
+      const isActive =
+        page === "home"
+          ? item.section === "top"
+            ? "is-active"
+            : ""
+          : item.page === page
+            ? "is-active"
+            : "";
+
+      const sectionAttrs =
+        page === "home" && item.section
+          ? `data-section-link="${item.section}"`
+          : "";
+
+      return `<a class="nav-link ${isActive}" href="${item.href}" ${sectionAttrs}>${item.label}</a>`;
+    })
     .join("");
+
   mount.innerHTML = `
+    <a class="skip-link" href="#main-content">Saltar al contenido</a>
     <header class="site-header">
       <div class="container nav-shell">
         <a class="brand" href="index.html" aria-label="Ir al inicio de ${SITE.name}">
-          <img src="assets/img/alix-nails-hair.jpg" alt="Logo de Alix Nails & Hair" width="72" height="72" />
-          <span><strong>${SITE.name}</strong><small>${SITE.tagline}</small></span>
+          <img src="assets/img/alix-nails-hair.jpg" alt="Logo de ${SITE.name}" width="72" height="72" />
+          <span class="brand-copy">
+            <strong>${SITE.name}</strong>
+            <small>${SITE.tagline}</small>
+          </span>
         </a>
-        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
-          <span></span><span></span>
+        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-        <nav class="site-nav" aria-label="Navegación principal">
-          ${links}
-          <a class="button button-small" href="booking.html">Reservar</a>
+        <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+          ${navLinks}
+          <a class="button button-small" href="booking.html" aria-label="Reservar cita en Alix Nails & Hair">Reservar</a>
         </nav>
       </div>
-    </header>`;
-  const toggle = qs(".nav-toggle");
-  const nav = qs(".site-nav");
+    </header>
+  `;
+
+  const toggle = mount.querySelector(".nav-toggle");
+  const nav = mount.querySelector(".site-nav");
   toggle?.addEventListener("click", () => {
     const expanded = toggle.getAttribute("aria-expanded") === "true";
     toggle.setAttribute("aria-expanded", String(!expanded));
     nav?.classList.toggle("is-open");
   });
+
+  nav?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      toggle?.setAttribute("aria-expanded", "false");
+      nav.classList.remove("is-open");
+    });
+  });
 }
 
 function renderFooter() {
-  const mount = qs("[data-site-footer]");
+  const mount = selectOne("[data-site-footer]");
   if (!mount) return;
+
   const year = new Date().getFullYear();
-  const links = SITE.nav
-    .map(([href, label]) => `<li><a href="${href}">${label}</a></li>`)
+  const pageLinks = SITE.navPages
+    .map((item) => `<li><a href="${item.href}">${item.label}</a></li>`)
     .join("");
   const legalLinks = SITE.legalNav
-    .map(([href, label]) => `<li><a href="${href}">${label}</a></li>`)
+    .map((item) => `<li><a href="${item.href}">${item.label}</a></li>`)
     .join("");
+  const hours = SITE.hours.map((line) => `<li>${line}</li>`).join("");
+
   mount.innerHTML = `
     <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-brand">
-          <img src="assets/img/alix-nails-hair.jpg" alt="Logo de Alix Nails & Hair" width="86" height="86" />
+          <img src="assets/img/alix-nails-hair.jpg" alt="Logo de ${SITE.name}" width="86" height="86" />
           <h2>${SITE.name}</h2>
           <p>${SITE.description}</p>
           <div class="button-row">
-            <a class="button button-secondary" href="${SITE.whatsapp}" target="_blank" rel="noreferrer">WhatsApp</a>
-            <a class="button button-ghost" href="${SITE.instagram}" target="_blank" rel="noreferrer">Instagram</a>
+            <a class="button" href="booking.html">Book now</a>
+            <a class="button button-ghost" href="${SITE.whatsapp}" target="_blank" rel="noreferrer">WhatsApp</a>
           </div>
         </div>
         <div>
-          <h3>Navegación</h3>
-          <ul class="footer-links">${links}</ul>
+          <h3>Explorar</h3>
+          <ul class="footer-links">${pageLinks}</ul>
+          <div class="footer-legal">
+            <h3>Legal</h3>
+            <ul class="footer-links">${legalLinks}</ul>
+          </div>
         </div>
         <div>
           <h3>Contacto</h3>
@@ -283,9 +284,9 @@ function renderFooter() {
             <li><a href="${SITE.instagram}" target="_blank" rel="noreferrer">Instagram</a></li>
             <li><a href="${mapUrl()}" target="_blank" rel="noreferrer">${SITE.address}</a></li>
           </ul>
-          <div class="footer-legal">
-            <h3>Legal</h3>
-            <ul class="footer-links footer-links-legal">${legalLinks}</ul>
+          <div class="footer-hours">
+            <h3>Horarios</h3>
+            <ul class="footer-links">${hours}</ul>
           </div>
         </div>
         <div class="footer-map">
@@ -295,124 +296,197 @@ function renderFooter() {
               title="Mapa de ${SITE.name}"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              src="${embedMap()}"
+              src="${mapEmbedUrl()}"
             ></iframe>
           </div>
         </div>
       </div>
       <div class="container footer-bottom">
         <small>&copy; ${year} ${SITE.name}. Todos los derechos reservados.</small>
-        <small>Belleza, trato cercano y detalles precisos en cada visita.</small>
+        <small>Nails salon y hair salon en Condado Mall con reservas por WhatsApp.</small>
       </div>
     </footer>
-    <a class="floating-whatsapp" href="${SITE.whatsapp}" target="_blank" rel="noreferrer">WhatsApp</a>`;
+    <a class="floating-whatsapp" href="${SITE.whatsapp}" target="_blank" rel="noreferrer" aria-label="Escribir por WhatsApp">WhatsApp</a>
+    <div class="mobile-cta">
+      <a class="button" href="booking.html">Book now</a>
+      <a class="button button-secondary" href="${SITE.whatsapp}" target="_blank" rel="noreferrer">WhatsApp</a>
+    </div>
+  `;
 }
 
-function mountGrid(selector, items, render) {
-  const mount = qs(selector);
-  if (!mount) return;
-  mount.innerHTML = cardList(items, render);
-}
-
-function renderSections() {
-  mountGrid("[data-featured-services]", SITE.featured, (item) => `
-    <article class="service-card" data-reveal>
-      <div class="pill-row">${item.tags
-        .map((tag) => `<span class="pill">${tag}</span>`)
-        .join("")}</div>
-      <h3>${item.t}</h3>
-      <p>${item.d}</p>
-      <a class="text-link" href="booking.html">Solicitar cita</a>
-    </article>`);
-  mountGrid("[data-service-groups]", SITE.groups, (group) => `
-    <article class="detail-card" data-reveal>
-      <span class="eyebrow eyebrow-accent">${group.t}</span>
-      <p class="detail-lead">${group.l}</p>
-      <ul class="bullet-list">${group.items.map((item) => `<li>${item}</li>`).join("")}</ul>
-      <a class="button button-secondary" href="booking.html">Agendar este servicio</a>
-    </article>`);
-  mountGrid("[data-about-values]", SITE.values, ([t, d]) => `
-    <article class="value-card" data-reveal><h3>${t}</h3><p>${d}</p></article>`);
-  mountGrid("[data-process-steps]", SITE.process, ([t, d]) => `
-    <article class="step-card" data-reveal><h3>${t}</h3><p>${d}</p></article>`);
-  mountGrid("[data-faq-list]", SITE.faq, ([q, a]) => `
-    <details class="faq-item" data-reveal><summary>${q}</summary><p>${a}</p></details>`);
-  mountGrid("[data-contact-channels]", SITE.channels, ([t, d, href, label]) => `
-    <article class="contact-card" data-reveal>
-      <h3>${t}</h3><p>${d}</p>
-      <a class="text-link" href="${href || mapUrl()}" target="_blank" rel="noreferrer">${label}</a>
-    </article>`);
-  mountGrid("[data-gallery-grid]", SITE.gallery, ([t, d, src, alt]) => `
-    <figure class="gallery-card" data-reveal>
-      <img src="${src}" alt="${alt}" loading="lazy" />
-      <figcaption><strong>${t}</strong><span>${d}</span></figcaption>
-    </figure>`);
-}
-
-function populateServiceSelects() {
-  const services = SITE.groups.flatMap((group) => group.items);
-  qsa("[data-service-select]").forEach((select) => {
-    select.insertAdjacentHTML(
-      "beforeend",
-      services.map((item) => `<option value="${item}">${item}</option>`).join("")
-    );
+function syncSharedContent() {
+  selectAll("[data-business-name]").forEach((node) => {
+    node.textContent = SITE.name;
+  });
+  selectAll("[data-address]").forEach((node) => {
+    node.textContent = SITE.address;
+  });
+  selectAll("[data-phone]").forEach((node) => {
+    node.textContent = SITE.phoneDisplay;
+  });
+  selectAll("[data-booking-note]").forEach((node) => {
+    node.textContent = SITE.hoursNote;
+  });
+  selectAll("[data-whatsapp-link]").forEach((node) => {
+    node.setAttribute("href", SITE.whatsapp);
+  });
+  selectAll("[data-instagram-link]").forEach((node) => {
+    node.setAttribute("href", SITE.instagram);
+  });
+  selectAll("[data-phone-link]").forEach((node) => {
+    node.setAttribute("href", `tel:${SITE.phoneRaw}`);
+  });
+  selectAll("[data-map-link]").forEach((node) => {
+    node.setAttribute("href", mapUrl());
+  });
+  selectAll("[data-map-embed]").forEach((node) => {
+    node.setAttribute("src", mapEmbedUrl());
   });
 }
 
+function populateServiceSelects() {
+  const serviceOptions = SITE.serviceGroups
+    .flatMap((group) => group.items)
+    .map((item) => `<option value="${item}">${item}</option>`)
+    .join("");
+
+  selectAll("[data-service-select]").forEach((select) => {
+    select.insertAdjacentHTML("beforeend", serviceOptions);
+  });
+}
+
+function mountGrid(selector, items, template) {
+  const mount = selectOne(selector);
+  if (!mount) return;
+  mount.innerHTML = items.map(template).join("");
+}
+
+function renderDynamicSections() {
+  mountGrid("[data-service-groups]", SITE.serviceGroups, (group) => `
+    <article class="content-block" data-reveal>
+      <span class="eyebrow">${group.title}</span>
+      <p class="detail-lead">${group.lead}</p>
+      <ul class="bullet-list">
+        ${group.items.map((item) => `<li>${item}</li>`).join("")}
+      </ul>
+      <a class="text-link" href="booking.html">Reservar este servicio</a>
+    </article>
+  `);
+
+  mountGrid("[data-about-values]", SITE.values, (item) => `
+    <article class="content-block" data-reveal>
+      <h3>${item.title}</h3>
+      <p>${item.text}</p>
+    </article>
+  `);
+
+  mountGrid("[data-process-steps]", SITE.process, (step) => `
+    <article class="content-block" data-reveal>
+      <h3>${step.title}</h3>
+      <p>${step.text}</p>
+    </article>
+  `);
+
+  mountGrid("[data-contact-channels]", SITE.contactChannels, (channel) => `
+    <article class="content-block" data-reveal>
+      <h3>${channel.title}</h3>
+      <p>${channel.text}</p>
+      <a class="text-link" href="${channel.href || mapUrl()}" target="_blank" rel="noreferrer">${channel.label}</a>
+    </article>
+  `);
+
+  mountGrid("[data-faq-list]", SITE.faq, (item) => `
+    <details class="faq-item" data-reveal>
+      <summary>${item.question}</summary>
+      <p>${item.answer}</p>
+    </details>
+  `);
+}
+
 function setupScrollState() {
-  const header = qs(".site-header");
+  const header = selectOne(".site-header");
   if (!header) return;
-  const sync = () => header.classList.toggle("is-scrolled", window.scrollY > 12);
-  sync();
-  window.addEventListener("scroll", sync, { passive: true });
+
+  const update = () => {
+    header.classList.toggle("is-scrolled", window.scrollY > 8);
+  };
+
+  update();
+  window.addEventListener("scroll", update, { passive: true });
 }
 
 function setupReveal() {
-  const items = qsa("[data-reveal]");
+  const elements = selectAll("[data-reveal]");
+  if (!elements.length) return;
+
   if (!("IntersectionObserver" in window)) {
-    items.forEach((item) => item.classList.add("is-visible"));
+    elements.forEach((element) => element.classList.add("is-visible"));
     return;
   }
-  const io = new IntersectionObserver(
+
+  const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
         entry.target.classList.add("is-visible");
-        io.unobserve(entry.target);
+        observer.unobserve(entry.target);
       });
     },
-    { threshold: 0.18 }
+    { threshold: 0.15 }
   );
-  items.forEach((item) => io.observe(item));
+
+  elements.forEach((element) => observer.observe(element));
 }
 
-function setupHeroMotion() {
-  const visual = qs(".hero-visual");
-  if (!visual || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    return;
-  }
+function setupSectionSpy() {
+  if (document.body.dataset.page !== "home") return;
 
-  visual.addEventListener("mousemove", (event) => {
-    const rect = visual.getBoundingClientRect();
-    const x = ((event.clientX - rect.left) / rect.width - 0.5).toFixed(3);
-    const y = ((event.clientY - rect.top) / rect.height - 0.5).toFixed(3);
-    visual.style.setProperty("--pointer-x", x);
-    visual.style.setProperty("--pointer-y", y);
-  });
+  const links = selectAll("[data-section-link]");
+  const sections = links
+    .map((link) => document.getElementById(link.dataset.sectionLink))
+    .filter(Boolean);
 
-  visual.addEventListener("mouseleave", () => {
-    visual.style.setProperty("--pointer-x", "0");
-    visual.style.setProperty("--pointer-y", "0");
-  });
+  if (!sections.length) return;
+
+  const updateActive = (sectionId) => {
+    links.forEach((link) => {
+      link.classList.toggle(
+        "is-active",
+        link.dataset.sectionLink === sectionId
+      );
+    });
+  };
+
+  updateActive("top");
+
+  if (!("IntersectionObserver" in window)) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+      if (visible?.target.id) {
+        updateActive(visible.target.id);
+      }
+    },
+    {
+      rootMargin: "-35% 0px -50% 0px",
+      threshold: [0.15, 0.35, 0.65]
+    }
+  );
+
+  sections.forEach((section) => observer.observe(section));
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   renderHeader();
   renderFooter();
-  fillSharedContent();
-  renderSections();
+  syncSharedContent();
   populateServiceSelects();
+  renderDynamicSections();
   setupScrollState();
   setupReveal();
-  setupHeroMotion();
+  setupSectionSpy();
 });
