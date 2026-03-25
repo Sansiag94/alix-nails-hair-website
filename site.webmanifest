@@ -1,0 +1,15 @@
+{
+  "name": "Alix Nails & Hair",
+  "short_name": "Alix",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6efe8",
+  "theme_color": "#cb725b",
+  "icons": [
+    {
+      "src": "./assets/img/alix-nails-hair.jpg",
+      "sizes": "150x150",
+      "type": "image/jpeg"
+    }
+  ]
+}

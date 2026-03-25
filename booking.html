@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reservas | Alix Nails & Hair</title>
+    <meta
+      name="description"
+      content="Solicita tu cita en Alix Nails & Hair y coordínala por WhatsApp con una experiencia clara y refinada."
+    />
+    <meta name="theme-color" content="#cb725b" />
+    <link rel="icon" href="assets/img/alix-nails-hair.jpg" type="image/jpeg" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/forms.js" defer></script>
+  </head>
+  <body data-page="booking">
+    <div data-site-header></div>
+    <main>
+      <section class="section">
+        <div class="container page-hero">
+          <span class="eyebrow">Reservas</span>
+          <h1>Tu cita empieza con una conversación clara, privada y bien guiada.</h1>
+          <p>
+            Cuéntanos qué servicio quieres, la energía del look que buscas y tu fecha ideal.
+            Nosotros afinamos el resto contigo por WhatsApp.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-soft">
+        <div class="container">
+          <div class="booking-options">
+            <article class="booking-option" data-reveal>
+              <h3>Consulta cuidada</h3>
+              <p>La solicitud recoge lo esencial para que la coordinación se sienta ágil y personalizada.</p>
+            </article>
+            <article class="booking-option" data-reveal>
+              <h3>Dirección estética</h3>
+              <p>Puedes sumar referencias, ocasión o preferencias para que la cita llegue mejor diseñada.</p>
+            </article>
+            <article class="booking-option" data-reveal>
+              <h3>Confirmación directa</h3>
+              <p>La conversación continúa por WhatsApp con el salón para cerrar disponibilidad y detalles finales.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container booking-layout">
+          <form class="form-shell" data-booking-form>
+            <div class="section-heading">
+              <span class="eyebrow eyebrow-accent">Formulario de cita</span>
+              <h2>Completa tus datos y abre una solicitud con intención.</h2>
+              <p>El salón revisará disponibilidad, tiempo de servicio y detalles contigo por WhatsApp.</p>
+            </div>
+            <div class="form-grid">
+              <div class="field">
+                <label for="booking-name">Nombre</label>
+                <input id="booking-name" name="name" type="text" required />
+              </div>
+              <div class="field">
+                <label for="booking-phone">Teléfono</label>
+                <input id="booking-phone" name="phone" type="tel" required />
+              </div>
+              <div class="field">
+                <label for="booking-email">Email</label>
+                <input id="booking-email" name="email" type="email" />
+              </div>
+              <div class="field">
+                <label for="booking-service">Servicio</label>
+                <select id="booking-service" name="service" data-service-select required>
+                  <option value="">Selecciona un servicio</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="booking-date">Fecha preferida</label>
+                <input id="booking-date" name="date" type="date" required />
+              </div>
+              <div class="field">
+                <label for="booking-time">Hora preferida</label>
+                <select id="booking-time" name="time" required>
+                  <option value="">Selecciona una franja</option>
+                  <option>9:00 AM</option>
+                  <option>10:00 AM</option>
+                  <option>11:00 AM</option>
+                  <option>12:00 PM</option>
+                  <option>1:00 PM</option>
+                  <option>2:00 PM</option>
+                  <option>3:00 PM</option>
+                  <option>4:00 PM</option>
+                  <option>5:00 PM</option>
+                  <option>6:00 PM</option>
+                </select>
+              </div>
+              <div class="field-full">
+                <label for="booking-preference">Preferencia de técnica o estilista</label>
+                <input id="booking-preference" name="preference" type="text" placeholder="Opcional" />
+              </div>
+              <div class="field-full">
+                <label for="booking-notes">Notas adicionales</label>
+                <textarea
+                  id="booking-notes"
+                  name="notes"
+                  placeholder="Cuéntanos si tienes una referencia, evento o requerimiento especial."
+                ></textarea>
+              </div>
+            </div>
+            <p class="status-text" data-form-status aria-live="polite"></p>
+            <p>
+              Al preparar tu solicitud aceptas los
+              <a class="text-link" href="terms.html">términos y condiciones</a>
+              y la
+              <a class="text-link" href="policy.html">política del sitio</a>.
+            </p>
+            <div class="button-row">
+              <button class="button" type="submit">Preparar cita en WhatsApp</button>
+              <a class="button button-secondary" data-whatsapp-link target="_blank" rel="noreferrer">WhatsApp directo</a>
+            </div>
+          </form>
+
+          <div class="contact-stack">
+            <article class="feature-panel">
+              <span class="eyebrow">Antes de venir</span>
+              <ul class="bullet-list">
+                <li>Confirma disponibilidad antes de desplazarte al salón.</li>
+                <li>Si tienes foto de referencia, compártela para afinar la dirección visual.</li>
+                <li>Para cambios grandes de color, pide una valoración previa.</li>
+                <li>Si lo prefieres, también puedes llamar o escribir por Instagram.</li>
+              </ul>
+            </article>
+            <div data-last-booking></div>
+            <article class="contact-panel">
+              <span class="eyebrow eyebrow-accent">Contacto privado</span>
+              <p><strong>WhatsApp:</strong> <span data-phone></span></p>
+              <p><strong>Dirección:</strong> <span data-address></span></p>
+              <div class="button-row">
+                <a class="button button-secondary" data-phone-link>Llámame</a>
+                <a class="button button-ghost" data-map-link target="_blank" rel="noreferrer">Ver mapa</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div data-site-footer></div>
+  </body>
+</html>
