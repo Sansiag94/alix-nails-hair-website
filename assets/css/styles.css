@@ -1065,12 +1065,12 @@ textarea {
 
 .footer-logo {
   width: 148px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 0;
-  background: transparent;
-  padding: 0;
-  box-shadow: none;
+  height: 148px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 0.6rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
 }
 
 .footer-copy {

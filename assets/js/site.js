@@ -317,7 +317,7 @@ function renderFooter() {
     <footer class="site-footer">
       <div class="container footer-grid">
         <section class="footer-brand">
-          <img class="footer-logo" src="${SITE.logoTransparent}" alt="Logo de ${SITE.name}" width="140" height="140" />
+          <img class="footer-logo" src="${SITE.logoPrimary}" alt="Logo de ${SITE.name}" width="148" height="148" />
           <div class="footer-copy">
             <h2>${SITE.name}</h2>
             <p>${SITE.description}</p>
