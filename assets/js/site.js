@@ -1,8 +1,8 @@
 const SITE = {
   name: "Alix Nails & Hair",
-  tagline: "Nails, hair & styling en Condado Mall",
+  tagline: "Nail & Hair Spa en Condado Mall",
   description:
-    "Nails salon y hair salon en Condado Mall con reservas por WhatsApp, diseño de uñas, color, cortes y peinados.",
+    "Alix Nails & Hair es un Nail & Hair Spa en Condado Mall con reservas por WhatsApp, cuidado de uñas, estilismo capilar y atención por cita.",
   phoneRaw: "+50762765890",
   phoneDisplay: "+507 6276-5890",
   whatsapp: "https://wa.me/50762765890",
@@ -10,16 +10,17 @@ const SITE = {
     "https://www.instagram.com/alixnailsandhair?igsh=MWZuYjRzMTVmazh3Yw==",
   address: "Condado Mall, primer piso, local 50.",
   mapQuery: "Condado Mall, Primer Piso, Local 50",
-  hoursNote: "Atención por cita y confirmación por WhatsApp.",
+  hoursNote: "Atención por cita y confirmación directa por WhatsApp.",
   hours: [
     "Lunes a sábado: horario sujeto a confirmación",
-    "Domingo: consultar disponibilidad"
+    "Domingo: consulta disponibilidad"
   ],
   navHome: [
     { href: "#top", label: "Inicio", section: "top" },
-    { href: "#about", label: "Nosotros", section: "about" },
+    { href: "#experience", label: "Experiencia", section: "experience" },
     { href: "#services", label: "Servicios", section: "services" },
     { href: "#testimonials", label: "Reseñas", section: "testimonials" },
+    { href: "#gallery", label: "Galería", section: "gallery" },
     { href: "#faq", label: "FAQ", section: "faq" },
     { href: "#contact", label: "Contacto", section: "contact" }
   ],
@@ -35,125 +36,125 @@ const SITE = {
   ],
   serviceGroups: [
     {
-      title: "Uñas",
+      title: "Manos en calma",
       lead:
-        "Servicios para manos y pies con enfoque en limpieza, duración y diseño bien resuelto.",
+        "Una selección de manicure, maquillaje de uñas y acabados con enfoque en armonía visual, duración y detalle.",
       items: [
-        "Maquillaje de uñas",
-        "Nail art",
         "Manicure y pedicure",
+        "Maquillaje de uñas",
         "Gel y refuerzo",
-        "Mantenimiento"
+        "Nail art personalizado",
+        "Mantenimiento y retoques"
       ]
     },
     {
-      title: "Cabello",
+      title: "Cabello con movimiento",
       lead:
-        "Opciones para diario, evento o refresh de imagen con acabado pulido y fácil de llevar.",
+        "Cortes, brushing, secados y peinados pensados para acompañar tu estilo con ligereza y presencia.",
       items: [
         "Hair styling",
         "Haircut",
         "Hair dressing",
-        "Secados y peinados",
+        "Brushing y secados",
         "Tratamientos capilares"
       ]
     },
     {
       title: "Color y ocasión",
       lead:
-        "Ideal para quienes buscan una cita más personalizada o una preparación especial.",
+        "Servicios para quienes buscan una cita más personalizada, un cambio visible o preparación para un momento especial.",
       items: [
         "Hair dyeing y coloración",
         "Retoque de raíz",
-        "Balayage sujeto a valoración",
-        "Maquillaje social",
-        "Peinados para eventos"
+        "Valoración para cambios de look",
+        "Peinados para eventos",
+        "Maquillaje social sujeto a consulta"
       ]
     }
   ],
   values: [
     {
-      title: "Atención cercana",
+      title: "Ritmo sereno",
       text:
-        "Cada cita empieza entendiendo el resultado que quieres y el tiempo real que necesitas."
+        "La experiencia se diseña para que cada cita se sienta clara, cómoda y con el tiempo necesario."
     },
     {
-      title: "Acabado cuidado",
+      title: "Detalle que permanece",
       text:
-        "La prioridad está en un resultado limpio, favorecedor y consistente con tu estilo."
+        "El resultado final importa tanto como la sensación de orden, limpieza y equilibrio en cada acabado."
     },
     {
-      title: "Proceso simple",
+      title: "Acompañamiento cercano",
       text:
-        "Reservar, confirmar y llegar al salón debe sentirse claro, rápido y cómodo."
+        "Desde la primera consulta hasta la confirmación de tu cita, todo busca sentirse simple y bien atendido."
     }
   ],
   process: [
     {
-      title: "1. Cuéntanos tu idea",
+      title: "Comparte tu idea",
       text:
-        "Comparte el servicio que buscas y, si quieres, una referencia para orientar mejor la cita."
+        "Cuéntanos qué servicio te interesa y, si quieres, envía una referencia para orientar mejor la cita."
     },
     {
-      title: "2. Confirmamos disponibilidad",
+      title: "Confirmamos tu momento",
       text:
-        "Revisamos horario, duración y detalles por WhatsApp antes de darte la confirmación."
+        "Revisamos horario, duración estimada y cualquier detalle importante antes de confirmar disponibilidad."
     },
     {
-      title: "3. Realizamos el servicio",
+      title: "Disfruta la experiencia",
       text:
-        "Trabajamos uñas o cabello con foco en detalle, comodidad y resultado final."
+        "La cita se vive con foco en bienestar, atención cuidada y un resultado que se sienta tuyo."
     }
   ],
   faq: [
     {
-      question: "¿Cómo reservo una cita?",
+      question: "¿Cómo puedo reservar una cita?",
       answer:
-        "Puedes usar el formulario de reservas o escribir por WhatsApp. En ambos casos la coordinación se confirma directamente con el salón."
+        "Puedes usar el formulario de reservas o escribir por WhatsApp. La confirmación final siempre se coordina directamente con el spa."
     },
     {
-      question: "¿Puedo pedir cotización antes de reservar?",
+      question: "¿Puedo pedir orientación antes de reservar?",
       answer:
-        "Sí. Puedes escribir por WhatsApp con una referencia de uñas o cabello y te orientamos según el servicio."
+        "Sí. Si tienes dudas sobre uñas, color, peinados o mantenimiento, puedes escribirnos y te ayudamos a elegir el servicio adecuado."
     },
     {
       question: "¿Dónde están ubicados?",
       answer:
-        "Estamos en Condado Mall, primer piso, local 50, con enlace directo al mapa dentro del sitio."
+        "Nos encuentras en Condado Mall, primer piso, local 50, con acceso directo al mapa desde el sitio."
     },
     {
-      question: "¿Atienden por orden de llegada?",
+      question: "¿Atienden solo con cita?",
       answer:
-        "La recomendación es reservar o confirmar por WhatsApp para evitar tiempos de espera."
+        "La atención se organiza por cita para cuidar mejor los tiempos y confirmar disponibilidad con antelación."
     }
   ],
   contactChannels: [
     {
       title: "WhatsApp",
       text:
-        "La vía más rápida para pedir disponibilidad, cotizar un servicio o enviar una referencia.",
+        "La forma más directa para pedir disponibilidad, compartir referencias y coordinar tu visita.",
       href: "https://wa.me/50762765890",
-      label: "Escribir ahora"
-    },
-    {
-      title: "Instagram",
-      text:
-        "Útil para ver inspiración, acabados y referencias visuales antes de tu cita.",
-      href:
-        "https://www.instagram.com/alixnailsandhair?igsh=MWZuYjRzMTVmazh3Yw==",
-      label: "Ver perfil"
+      label: "Escribir por WhatsApp"
     },
     {
       title: "Llamada",
       text:
-        "Si prefieres hablar directo con el salón, también puedes llamar al número principal.",
+        "Si prefieres una conversación inmediata, también puedes comunicarte al número principal.",
       href: "tel:+50762765890",
-      label: "Llamar"
+      label: "Llamar al spa"
+    },
+    {
+      title: "Instagram",
+      text:
+        "Explora referencias, acabados y la atmósfera visual del salón antes de tu cita.",
+      href:
+        "https://www.instagram.com/alixnailsandhair?igsh=MWZuYjRzMTVmazh3Yw==",
+      label: "Ver Instagram"
     },
     {
       title: "Ubicación",
       text:
-        "Encuéntranos en Condado Mall, primer piso, local 50, con acceso directo al mapa.",
+        "Visítanos en Condado Mall, primer piso, local 50, con guía directa desde Google Maps.",
       href: "",
       label: "Abrir mapa"
     }
@@ -162,8 +163,8 @@ const SITE = {
 
 window.SITE = SITE;
 
-const selectOne = (selector) => document.querySelector(selector);
-const selectAll = (selector) => [...document.querySelectorAll(selector)];
+const selectOne = (selector, scope = document) => scope.querySelector(selector);
+const selectAll = (selector, scope = document) => [...scope.querySelectorAll(selector)];
 
 function mapUrl() {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
@@ -177,31 +178,83 @@ function mapEmbedUrl() {
   )}&z=16&output=embed`;
 }
 
+function sharedActions(page) {
+  if (page === "booking") {
+    return {
+      header: {
+        href: SITE.whatsapp,
+        label: "WhatsApp",
+        external: true
+      },
+      footerPrimary: {
+        href: SITE.whatsapp,
+        label: "WhatsApp",
+        external: true
+      },
+      footerSecondary: {
+        href: "services.html",
+        label: "Ver servicios",
+        external: false
+      }
+    };
+  }
+
+  return {
+    header: {
+      href: "booking.html",
+      label: "Reservar cita",
+      external: false
+    },
+    footerPrimary: {
+      href: "booking.html",
+      label: "Reservar ahora",
+      external: false
+    },
+    footerSecondary: {
+      href: SITE.whatsapp,
+      label: "WhatsApp",
+      external: true
+    }
+  };
+}
+
+function createNavLink(item, page) {
+  const isHome = page === "home";
+  const isActive = isHome ? item.section === "top" : item.page === page;
+  const sectionAttrs =
+    isHome && item.section ? `data-section-link="${item.section}"` : "";
+  const ariaCurrent = isActive ? ' aria-current="page"' : "";
+
+  return `<a class="nav-link${isActive ? " is-active" : ""}" href="${item.href}" ${sectionAttrs}${ariaCurrent}>${item.label}</a>`;
+}
+
+function closeNav(toggle, nav) {
+  if (!toggle || !nav) return;
+  toggle.setAttribute("aria-expanded", "false");
+  toggle.setAttribute("aria-label", "Abrir menú");
+  nav.classList.remove("is-open");
+  document.body.classList.remove("nav-open");
+}
+
+function openNav(toggle, nav) {
+  if (!toggle || !nav) return;
+  toggle.setAttribute("aria-expanded", "true");
+  toggle.setAttribute("aria-label", "Cerrar menú");
+  nav.classList.add("is-open");
+  document.body.classList.add("nav-open");
+}
+
 function renderHeader() {
   const mount = selectOne("[data-site-header]");
   if (!mount) return;
 
   const page = document.body.dataset.page;
   const navItems = page === "home" ? SITE.navHome : SITE.navPages;
-  const navLinks = navItems
-    .map((item) => {
-      const isActive =
-        page === "home"
-          ? item.section === "top"
-            ? "is-active"
-            : ""
-          : item.page === page
-            ? "is-active"
-            : "";
-
-      const sectionAttrs =
-        page === "home" && item.section
-          ? `data-section-link="${item.section}"`
-          : "";
-
-      return `<a class="nav-link ${isActive}" href="${item.href}" ${sectionAttrs}>${item.label}</a>`;
-    })
-    .join("");
+  const navLinks = navItems.map((item) => createNavLink(item, page)).join("");
+  const actions = sharedActions(page);
+  const headerTarget = actions.header.external
+    ? `target="_blank" rel="noreferrer"`
+    : "";
 
   mount.innerHTML = `
     <a class="skip-link" href="#main-content">Saltar al contenido</a>
@@ -214,32 +267,43 @@ function renderHeader() {
             <small>${SITE.tagline}</small>
           </span>
         </a>
-        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
           <span></span>
           <span></span>
           <span></span>
         </button>
         <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
           ${navLinks}
-          <a class="button button-small" href="booking.html" aria-label="Reservar cita en Alix Nails & Hair">Reservar</a>
+          <a class="button button-small nav-cta" href="${actions.header.href}" ${headerTarget} aria-label="${actions.header.label} en ${SITE.name}">${actions.header.label}</a>
         </nav>
       </div>
     </header>
   `;
 
-  const toggle = mount.querySelector(".nav-toggle");
-  const nav = mount.querySelector(".site-nav");
+  const toggle = selectOne(".nav-toggle", mount);
+  const nav = selectOne(".site-nav", mount);
+
   toggle?.addEventListener("click", () => {
     const expanded = toggle.getAttribute("aria-expanded") === "true";
-    toggle.setAttribute("aria-expanded", String(!expanded));
-    nav?.classList.toggle("is-open");
+    if (expanded) {
+      closeNav(toggle, nav);
+    } else {
+      openNav(toggle, nav);
+    }
   });
 
   nav?.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      toggle?.setAttribute("aria-expanded", "false");
-      nav.classList.remove("is-open");
-    });
+    link.addEventListener("click", () => closeNav(toggle, nav));
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeNav(toggle, nav);
   });
 }
 
@@ -247,6 +311,8 @@ function renderFooter() {
   const mount = selectOne("[data-site-footer]");
   if (!mount) return;
 
+  const page = document.body.dataset.page;
+  const actions = sharedActions(page);
   const year = new Date().getFullYear();
   const pageLinks = SITE.navPages
     .map((item) => `<li><a href="${item.href}">${item.label}</a></li>`)
@@ -259,38 +325,47 @@ function renderFooter() {
   mount.innerHTML = `
     <footer class="site-footer">
       <div class="container footer-grid">
-        <div class="footer-brand">
-          <img src="assets/img/alix-nails-hair.jpg" alt="Logo de ${SITE.name}" width="86" height="86" />
-          <h2>${SITE.name}</h2>
-          <p>${SITE.description}</p>
-          <div class="button-row">
-            <a class="button" href="booking.html">Book now</a>
-            <a class="button button-ghost" href="${SITE.whatsapp}" target="_blank" rel="noreferrer">WhatsApp</a>
+        <section class="footer-brand">
+          <img src="assets/img/alix-nails-hair.jpg" alt="Logo de ${SITE.name}" width="88" height="88" />
+          <div class="footer-copy">
+            <h2>${SITE.name}</h2>
+            <p>${SITE.description}</p>
           </div>
-        </div>
-        <div>
-          <h3>Explorar</h3>
+          <div class="button-row">
+            <a class="button" href="${actions.footerPrimary.href}" ${actions.footerPrimary.external ? 'target="_blank" rel="noreferrer"' : ""}>${actions.footerPrimary.label}</a>
+            <a class="button button-ghost" href="${actions.footerSecondary.href}" ${actions.footerSecondary.external ? 'target="_blank" rel="noreferrer"' : ""}>${actions.footerSecondary.label}</a>
+          </div>
+        </section>
+
+        <section class="footer-section">
+          <h3>Navegación</h3>
           <ul class="footer-links">${pageLinks}</ul>
           <div class="footer-legal">
             <h3>Legal</h3>
             <ul class="footer-links">${legalLinks}</ul>
           </div>
-        </div>
-        <div>
+        </section>
+
+        <section class="footer-section">
           <h3>Contacto</h3>
           <ul class="footer-links">
             <li><a href="tel:${SITE.phoneRaw}">${SITE.phoneDisplay}</a></li>
-            <li><a href="${SITE.whatsapp}" target="_blank" rel="noreferrer">WhatsApp directo</a></li>
+            <li><a href="${SITE.whatsapp}" target="_blank" rel="noreferrer">Escribir por WhatsApp</a></li>
             <li><a href="${SITE.instagram}" target="_blank" rel="noreferrer">Instagram</a></li>
             <li><a href="${mapUrl()}" target="_blank" rel="noreferrer">${SITE.address}</a></li>
           </ul>
           <div class="footer-hours">
             <h3>Horarios</h3>
+            <p>${SITE.hoursNote}</p>
             <ul class="footer-links">${hours}</ul>
           </div>
-        </div>
-        <div class="footer-map">
-          <h3>Ubicación</h3>
+        </section>
+
+        <section class="footer-map">
+          <div class="footer-map-heading">
+            <h3>Condado Mall</h3>
+            <a class="text-link" href="${mapUrl()}" target="_blank" rel="noreferrer">Abrir mapa</a>
+          </div>
           <div class="footer-map-shell">
             <iframe
               title="Mapa de ${SITE.name}"
@@ -299,17 +374,28 @@ function renderFooter() {
               src="${mapEmbedUrl()}"
             ></iframe>
           </div>
-        </div>
+        </section>
       </div>
+
       <div class="container footer-bottom">
-        <small>&copy; ${year} ${SITE.name}. Todos los derechos reservados.</small>
-        <small>Nails salon y hair salon en Condado Mall con reservas por WhatsApp.</small>
+        <small data-current-year>&copy; ${year} ${SITE.name}. Todos los derechos reservados.</small>
+        <small>Nail & Hair Spa en Condado Mall con reservas por WhatsApp.</small>
       </div>
     </footer>
-    <a class="floating-whatsapp" href="${SITE.whatsapp}" target="_blank" rel="noreferrer" aria-label="Escribir por WhatsApp">WhatsApp</a>
-    <div class="mobile-cta">
-      <a class="button" href="booking.html">Book now</a>
-      <a class="button button-secondary" href="${SITE.whatsapp}" target="_blank" rel="noreferrer">WhatsApp</a>
+
+    <a
+      class="floating-whatsapp"
+      href="${SITE.whatsapp}"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Escribir por WhatsApp con ${SITE.name}"
+    >
+      WhatsApp
+    </a>
+
+    <div class="mobile-cta" aria-label="Acciones rápidas de reserva">
+      <a class="button" href="${actions.footerPrimary.href}" ${actions.footerPrimary.external ? 'target="_blank" rel="noreferrer"' : ""}>${actions.footerPrimary.label}</a>
+      <a class="button button-secondary" href="${actions.footerSecondary.href}" ${actions.footerSecondary.external ? 'target="_blank" rel="noreferrer"' : ""}>${actions.footerSecondary.label}</a>
     </div>
   `;
 }
@@ -318,27 +404,35 @@ function syncSharedContent() {
   selectAll("[data-business-name]").forEach((node) => {
     node.textContent = SITE.name;
   });
+
   selectAll("[data-address]").forEach((node) => {
     node.textContent = SITE.address;
   });
+
   selectAll("[data-phone]").forEach((node) => {
     node.textContent = SITE.phoneDisplay;
   });
+
   selectAll("[data-booking-note]").forEach((node) => {
     node.textContent = SITE.hoursNote;
   });
+
   selectAll("[data-whatsapp-link]").forEach((node) => {
     node.setAttribute("href", SITE.whatsapp);
   });
+
   selectAll("[data-instagram-link]").forEach((node) => {
     node.setAttribute("href", SITE.instagram);
   });
+
   selectAll("[data-phone-link]").forEach((node) => {
     node.setAttribute("href", `tel:${SITE.phoneRaw}`);
   });
+
   selectAll("[data-map-link]").forEach((node) => {
     node.setAttribute("href", mapUrl());
   });
+
   selectAll("[data-map-embed]").forEach((node) => {
     node.setAttribute("src", mapEmbedUrl());
   });
@@ -363,32 +457,32 @@ function mountGrid(selector, items, template) {
 
 function renderDynamicSections() {
   mountGrid("[data-service-groups]", SITE.serviceGroups, (group) => `
-    <article class="content-block" data-reveal>
+    <article class="service-detail" data-reveal>
       <span class="eyebrow">${group.title}</span>
       <p class="detail-lead">${group.lead}</p>
       <ul class="bullet-list">
         ${group.items.map((item) => `<li>${item}</li>`).join("")}
       </ul>
-      <a class="text-link" href="booking.html">Reservar este servicio</a>
+      <a class="text-link" href="booking.html">Reservar esta experiencia</a>
     </article>
   `);
 
   mountGrid("[data-about-values]", SITE.values, (item) => `
-    <article class="content-block" data-reveal>
+    <article class="editorial-point" data-reveal>
       <h3>${item.title}</h3>
       <p>${item.text}</p>
     </article>
   `);
 
   mountGrid("[data-process-steps]", SITE.process, (step) => `
-    <article class="content-block" data-reveal>
+    <article class="ritual-step" data-reveal>
       <h3>${step.title}</h3>
       <p>${step.text}</p>
     </article>
   `);
 
   mountGrid("[data-contact-channels]", SITE.contactChannels, (channel) => `
-    <article class="content-block" data-reveal>
+    <article class="channel-card" data-reveal>
       <h3>${channel.title}</h3>
       <p>${channel.text}</p>
       <a class="text-link" href="${channel.href || mapUrl()}" target="_blank" rel="noreferrer">${channel.label}</a>
@@ -432,7 +526,10 @@ function setupReveal() {
         observer.unobserve(entry.target);
       });
     },
-    { threshold: 0.15 }
+    {
+      threshold: 0.16,
+      rootMargin: "0px 0px -8% 0px"
+    }
   );
 
   elements.forEach((element) => observer.observe(element));
@@ -450,10 +547,13 @@ function setupSectionSpy() {
 
   const updateActive = (sectionId) => {
     links.forEach((link) => {
-      link.classList.toggle(
-        "is-active",
-        link.dataset.sectionLink === sectionId
-      );
+      const isActive = link.dataset.sectionLink === sectionId;
+      link.classList.toggle("is-active", isActive);
+      if (isActive) {
+        link.setAttribute("aria-current", "page");
+      } else {
+        link.removeAttribute("aria-current");
+      }
     });
   };
 
@@ -472,8 +572,8 @@ function setupSectionSpy() {
       }
     },
     {
-      rootMargin: "-35% 0px -50% 0px",
-      threshold: [0.15, 0.35, 0.65]
+      rootMargin: "-35% 0px -45% 0px",
+      threshold: [0.2, 0.45, 0.7]
     }
   );
 

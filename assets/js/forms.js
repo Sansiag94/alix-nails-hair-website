@@ -26,6 +26,7 @@ function saveDraft(form, key) {
 function restoreDraft(form, key) {
   const data = readDraft(key);
   if (!data) return;
+
   Object.entries(data).forEach(([name, value]) => {
     const field = form.elements.namedItem(name);
     if (field && "value" in field) field.value = value;
@@ -45,6 +46,7 @@ function openWhatsApp(message) {
 
 function humanDate(value) {
   if (!value) return "Por definir";
+
   return new Intl.DateTimeFormat("es-PA", {
     weekday: "long",
     day: "numeric",
@@ -56,19 +58,22 @@ function humanDate(value) {
 function renderSummary(selector, key, mode) {
   const mount = formSelector(selector);
   if (!mount) return;
+
   const data = readDraft(key);
+
   if (!data) {
     mount.innerHTML = `
       <div class="summary-card muted-card">
         <strong>Aún no hay una solicitud guardada</strong>
-        <p>Cuando uses el formulario, verás aquí un resumen rápido para seguir tu conversación.</p>
+        <p>Cuando completes el formulario, aquí verás un resumen para retomar la conversación con facilidad.</p>
       </div>`;
     return;
   }
+
   mount.innerHTML =
     mode === "booking"
       ? `<div class="summary-card">
-          <strong>Última solicitud de cita</strong>
+          <strong>Última solicitud preparada</strong>
           <p><span>Nombre:</span> ${data.name || "Sin nombre"}</p>
           <p><span>Servicio:</span> ${data.service || "Por definir"}</p>
           <p><span>Fecha:</span> ${humanDate(data.date)}</p>
@@ -80,7 +85,7 @@ function renderSummary(selector, key, mode) {
           <p><span>Nombre:</span> ${data.name || "Sin nombre"}</p>
           <p><span>Servicio:</span> ${data.service_interest || "Consulta general"}</p>
           <p><span>Contacto:</span> ${data.phone || "No indicado"}</p>
-          <p><span>Preferencia:</span> ${data.contact_method || "WhatsApp"}</p>
+          <p><span>Canal preferido:</span> ${data.contact_method || "WhatsApp"}</p>
         </div>`;
 }
 
@@ -94,25 +99,29 @@ function setupDateMin() {
 function setupContactForm() {
   const form = formSelector("[data-contact-form]");
   if (!form) return;
+
   restoreDraft(form, STORE.contactDraft);
   form.addEventListener("input", () => saveDraft(form, STORE.contactDraft));
+
   form.addEventListener("submit", (event) => {
     event.preventDefault();
+
     const data = Object.fromEntries(new FormData(form).entries());
     const message = [
-      "Hola Alix Nails & Hair, quiero hacer una consulta desde la web.",
+      "Hola Alix Nails & Hair, me gustaría hacer una consulta desde la web.",
       `Nombre: ${data.name}`,
       `Teléfono: ${data.phone}`,
       `Servicio de interés: ${data.service_interest || "Consulta general"}`,
-      `Método preferido: ${data.contact_method || "WhatsApp"}`,
+      `Canal preferido: ${data.contact_method || "WhatsApp"}`,
       `Mensaje: ${data.message || "Sin detalles adicionales"}`
     ].join("\n");
+
     writeDraft(STORE.lastContact, data);
     localStorage.removeItem(STORE.contactDraft);
     form.reset();
     status(
       form,
-      "Abrimos WhatsApp con tu mensaje listo para enviar. Si no se abre, usa el botón directo de contacto."
+      "Abrimos WhatsApp con tu mensaje listo para enviar. Si no se abre, puedes usar el botón de contacto directo."
     );
     renderSummary("[data-last-contact]", STORE.lastContact, "contact");
     openWhatsApp(message);
@@ -122,13 +131,16 @@ function setupContactForm() {
 function setupBookingForm() {
   const form = formSelector("[data-booking-form]");
   if (!form) return;
+
   restoreDraft(form, STORE.bookingDraft);
   form.addEventListener("input", () => saveDraft(form, STORE.bookingDraft));
+
   form.addEventListener("submit", (event) => {
     event.preventDefault();
+
     const data = Object.fromEntries(new FormData(form).entries());
     const message = [
-      "Hola Alix Nails & Hair, quiero solicitar una cita desde la web.",
+      "Hola Alix Nails & Hair, me gustaría solicitar una cita desde la web.",
       `Nombre: ${data.name}`,
       `Teléfono: ${data.phone}`,
       `Email: ${data.email || "No indicado"}`,
@@ -138,12 +150,13 @@ function setupBookingForm() {
       `Preferencia: ${data.preference || "Primera disponible"}`,
       `Notas: ${data.notes || "Sin notas adicionales"}`
     ].join("\n");
+
     writeDraft(STORE.lastBooking, data);
     localStorage.removeItem(STORE.bookingDraft);
     form.reset();
     status(
       form,
-      "Tu solicitud quedó preparada y se abrirá en WhatsApp para coordinarla directamente con el salón."
+      "Tu solicitud quedó preparada y se abrirá en WhatsApp para seguir la coordinación directamente con el salón."
     );
     renderSummary("[data-last-booking]", STORE.lastBooking, "booking");
     openWhatsApp(message);
