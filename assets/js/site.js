@@ -355,13 +355,15 @@ function renderFooter() {
             <h3>Condado Mall</h3>
             <a class="text-link" href="${mapUrl()}" target="_blank" rel="noreferrer">Abrir mapa</a>
           </div>
-          <div class="footer-map-shell">
-            <iframe
-              title="Mapa de ${SITE.name}"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              src="${mapEmbedUrl()}"
-            ></iframe>
+          <div class="footer-map-shell location-card">
+            <div class="location-card-inner">
+              <p>Abre la ficha del negocio en Google Maps para ver ruta, guardar el lugar y confirmar el punto exacto.</p>
+              <div class="location-pills">
+                <span>Alix Nails & Hair</span>
+                <span>Centro Comercial Condado Mall</span>
+              </div>
+              <a class="button button-small" href="${mapUrl()}" target="_blank" rel="noreferrer">Abrir en Google Maps</a>
+            </div>
           </div>
         </section>
       </div>
@@ -422,9 +424,6 @@ function syncSharedContent() {
     node.setAttribute("href", mapUrl());
   });
 
-  selectAll("[data-map-embed]").forEach((node) => {
-    node.setAttribute("src", mapEmbedUrl());
-  });
 }
 
 function populateServiceSelects() {

@@ -954,16 +954,78 @@ p {
   box-shadow: var(--shadow-strong);
 }
 
-.map-shell iframe,
-.footer-map-shell iframe {
-  width: 100%;
-  height: 100%;
+.location-card {
+  position: relative;
   min-height: 320px;
-  border: 0;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid rgba(26, 26, 26, 0.08);
+  background:
+    radial-gradient(circle at top right, rgba(232, 207, 203, 0.75), transparent 28%),
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.75), transparent 24%),
+    linear-gradient(160deg, rgba(255, 255, 255, 0.94), rgba(245, 237, 230, 0.92));
+  box-shadow: var(--shadow-soft);
+  isolation: isolate;
 }
 
-.contact-layout-balanced .map-shell iframe {
+.location-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(26, 26, 26, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26, 26, 26, 0.06) 1px, transparent 1px);
+  background-size: 64px 64px;
+  opacity: 0.22;
+  z-index: -2;
+}
+
+.location-card::after {
+  content: "";
+  position: absolute;
+  right: 1.4rem;
+  bottom: 1.4rem;
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at center, rgba(182, 122, 103, 0.18) 0 40%, transparent 41%),
+    rgba(182, 122, 103, 0.16);
+  box-shadow: 0 0 0 14px rgba(182, 122, 103, 0.08);
+}
+
+.location-card-large {
   min-height: 100%;
+}
+
+.location-card-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-content: end;
+  gap: 1rem;
+  min-height: 100%;
+}
+
+.location-card-inner h3 {
+  max-width: 14ch;
+}
+
+.location-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.location-pills span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.2rem;
+  padding: 0.55rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(26, 26, 26, 0.08);
+  color: var(--color-ink);
+  font-size: 0.9rem;
 }
 
 .contact-panel {
@@ -1180,6 +1242,30 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
+}
+
+.site-footer .location-card {
+  min-height: 260px;
+  background:
+    radial-gradient(circle at top right, rgba(182, 122, 103, 0.18), transparent 30%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
+}
+
+.site-footer .location-card::before {
+  opacity: 0.12;
+}
+
+.site-footer .location-card::after {
+  background:
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.14) 0 40%, transparent 41%),
+    rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 14px rgba(255, 255, 255, 0.05);
+}
+
+.site-footer .location-pills span {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.14);
+  color: var(--color-white);
 }
 
 .site-footer .button {
