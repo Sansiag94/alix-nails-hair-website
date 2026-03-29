@@ -14,7 +14,7 @@ const SITE = {
     "https://www.instagram.com/alixnailsandhair?igsh=MWZuYjRzMTVmazh3Yw==",
   address: "Centro Comercial Condado Mall, primer piso, local 50.",
   mapLink:
-    "https://maps.app.goo.gl/2ExYPQuHKtNivdBj7",
+    "https://www.google.com/maps/place/Centro+Comercial+Condado+Mall/@9.0296458,-79.530813,15.25z/data=!4m6!3m5!1s0x8faca82677e90075:0x881488d5dfb1896!8m2!3d9.0317732!4d-79.5262464!16s%2Fg%2F11f03kbxxv?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D",
   mapEmbed:
     "https://www.google.com/maps?q=Alix+Nails+%26+Hair,+2FJF%2B8M+Panama+City,+Panama&z=17&output=embed",
   hoursNote: "Lunes a sábado de 9:00 AM a 7:00 PM · Domingo de 10:00 AM a 5:00 PM.",
