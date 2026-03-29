@@ -13,11 +13,11 @@
       content="nails salon Condado Mall, hair salon Condado Mall, nail and hair spa, manicure, maquillaje de uñas, hair styling, Alix Nails & Hair"
     />
     <meta name="theme-color" content="#1a1a1a" />
-    <link rel="canonical" href="https://sansiag94.github.io/alix-nails-hair-website/index.html" />
-    <link rel="preload" as="image" href="assets/img/alix-nail-spa-hero-panama.jpg" />
-    <link rel="icon" href="assets/img/alix-nails-hair-logo.png" type="image/png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="canonical" href="https://alixnailsandhair.com/" />
+    <link rel="preload" as="image" href="/assets/img/alix-nail-spa-hero-panama.jpg" />
+    <link rel="icon" href="/assets/img/alix-nails-hair-logo.png" type="image/png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_PA" />
     <meta property="og:title" content="Alix Nails & Hair | Nail & Hair Spa en Condado Mall" />
@@ -25,10 +25,10 @@
       property="og:description"
       content="Un espacio para uñas y cabello en Condado Mall, con reservas por WhatsApp, horarios amplios y una experiencia serena."
     />
-    <meta property="og:url" content="https://sansiag94.github.io/alix-nails-hair-website/index.html" />
+    <meta property="og:url" content="https://alixnailsandhair.com/" />
     <meta
       property="og:image"
-      content="https://sansiag94.github.io/alix-nails-hair-website/assets/img/alix-nails-hair-logo.png"
+      content="https://alixnailsandhair.com/assets/img/alix-nails-hair-logo.png"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Alix Nails & Hair | Nail & Hair Spa en Condado Mall" />
@@ -38,17 +38,22 @@
     />
     <meta
       name="twitter:image"
-      content="https://sansiag94.github.io/alix-nails-hair-website/assets/img/alix-nails-hair-logo.png"
+      content="https://alixnailsandhair.com/assets/img/alix-nails-hair-logo.png"
     />
+    <script>
+      if (window.location.pathname.endsWith("/index.html")) {
+        window.location.replace("/");
+      }
+    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "BeautySalon",
         "name": "Alix Nails & Hair",
         "description": "Nail & Hair Spa en Condado Mall con reservas por WhatsApp, servicios de uñas y cabello por cita.",
-        "image": "https://sansiag94.github.io/alix-nails-hair-website/assets/img/alix-nails-hair-logo.png",
+        "image": "https://alixnailsandhair.com/assets/img/alix-nails-hair-logo.png",
         "telephone": "+50762765890",
-        "url": "https://sansiag94.github.io/alix-nails-hair-website/index.html",
+        "url": "https://alixnailsandhair.com/",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Centro Comercial Condado Mall, Primer Piso, Local 50",
@@ -81,7 +86,7 @@
         ]
       }
     </script>
-    <script src="assets/js/site.js" defer></script>
+    <script src="/assets/js/site.js" defer></script>
   </head>
   <body data-page="home">
     <div data-site-header></div>
@@ -99,8 +104,8 @@
                   que acompaña desde la reserva hasta el resultado final.
                 </p>
                 <div class="button-row" data-reveal>
-                  <a class="button" href="booking.html" aria-label="Reservar cita en Alix Nails & Hair">Reservar cita</a>
-                  <a class="button button-secondary" href="services.html" aria-label="Ver servicios de Alix Nails & Hair">Ver servicios</a>
+                  <a class="button" href="/booking/" aria-label="Reservar cita en Alix Nails & Hair">Reservar cita</a>
+                  <a class="button button-secondary" href="/services/" aria-label="Ver servicios de Alix Nails & Hair">Ver servicios</a>
                 </div>
                 <ul class="hero-trust" data-reveal>
                   <li>Lunes a sábado 9 AM - 7 PM</li>
@@ -156,19 +161,19 @@
               <span class="subtle-label">Nosotros</span>
               <h3>La forma de atender y el ritmo que define la experiencia.</h3>
               <p>Descubre cómo se vive una cita en Alix Nails & Hair y qué hace especial su atmósfera.</p>
-              <a class="text-link" href="about.html">Ir a nosotros</a>
+              <a class="text-link" href="/about/">Ir a nosotros</a>
             </article>
             <article class="page-preview-card" data-reveal>
               <span class="subtle-label">Servicios</span>
               <h3>Rituales de uñas, cabello y color con enfoque en bienestar.</h3>
               <p>Explora el menú principal del spa con una lectura más clara y detallada de cada experiencia.</p>
-              <a class="text-link" href="services.html">Ir a servicios</a>
+              <a class="text-link" href="/services/">Ir a servicios</a>
             </article>
             <article class="page-preview-card" data-reveal>
               <span class="subtle-label">Reservas</span>
               <h3>Una página dedicada para pedir tu cita con más claridad.</h3>
               <p>Comparte servicio, horario y referencias en un solo lugar, con un flujo más directo para coordinar.</p>
-              <a class="text-link" href="booking.html">Ir a reservas</a>
+              <a class="text-link" href="/booking/">Ir a reservas</a>
             </article>
           </div>
         </div>
@@ -209,7 +214,7 @@
             <article class="service-card" data-reveal>
               <div class="service-card-media">
                 <img
-                  src="assets/img/alix-manicure-service-panama.jpg"
+                  src="/assets/img/alix-manicure-service-panama.jpg"
                   alt="Diseño de uñas rosado con acabado delicado"
                   loading="lazy"
                 />
@@ -222,14 +227,14 @@
                 <p>
                   Manicure, maquillaje de uñas, gel y nail art con atención al detalle, equilibrio visual y una duración pensada para acompañarte más allá de la cita.
                 </p>
-                <a class="text-link" href="services.html">Ver más servicios</a>
+                <a class="text-link" href="/services/">Ver más servicios</a>
               </div>
             </article>
 
             <article class="service-card" data-reveal>
               <div class="service-card-media">
                 <img
-                  src="assets/img/alix-haircut-styling-panama.jpg"
+                  src="/assets/img/alix-haircut-styling-panama.jpg"
                   alt="Inspiración de corte y estilismo para servicio de cabello"
                   loading="lazy"
                 />
@@ -240,14 +245,14 @@
                   <span class="service-price">Styling y corte</span>
                 </div>
                 <p>Hair styling, brushing, haircut y peinados con una lectura cuidadosa de tu estilo y tu ocasión.</p>
-                <a class="text-link" href="services.html">Explorar</a>
+                <a class="text-link" href="/services/">Explorar</a>
               </div>
             </article>
 
             <article class="service-card" data-reveal>
               <div class="service-card-media">
                 <img
-                  src="assets/img/alix-hair-color-service-panama.jpg"
+                  src="/assets/img/alix-hair-color-service-panama.jpg"
                   alt="Cabello con coloración y ondas para servicios de tintura"
                   loading="lazy"
                 />
@@ -258,7 +263,7 @@
                   <span class="service-price">Valoración previa</span>
                 </div>
                 <p>Cambios de color, retoques y preparación para eventos con una conversación previa para cuidar el resultado.</p>
-                <a class="text-link" href="contact.html">Hacer una consulta</a>
+                <a class="text-link" href="/contact/">Hacer una consulta</a>
               </div>
             </article>
           </div>
@@ -274,7 +279,7 @@
             </p>
           </div>
           <div class="button-row">
-            <a class="button" href="booking.html">Reservar ahora</a>
+            <a class="button" href="/booking/">Reservar ahora</a>
             <a class="button button-secondary" data-whatsapp-link target="_blank" rel="noreferrer">Escribir por WhatsApp</a>
           </div>
         </div>
@@ -328,21 +333,21 @@
 
           <div class="home-gallery-grid">
             <figure class="gallery-card home-gallery-card" data-reveal>
-              <img src="assets/img/alix-manicure-service-panama.jpg" alt="Manicure rosado con acabado brillante y forma definida" loading="lazy" />
+              <img src="/assets/img/alix-manicure-service-panama.jpg" alt="Manicure rosado con acabado brillante y forma definida" loading="lazy" />
               <figcaption>Acabados pulidos, brillo suave y una lectura visual limpia para manos cuidadas.</figcaption>
             </figure>
             <figure class="gallery-card home-gallery-card" data-reveal>
-              <img src="assets/img/alix-hair-movement-panama.jpg" alt="Cabello con ondas suaves y movimiento natural" loading="lazy" />
+              <img src="/assets/img/alix-hair-movement-panama.jpg" alt="Cabello con ondas suaves y movimiento natural" loading="lazy" />
               <figcaption>Movimiento, forma y textura para imaginar un styling con caída ligera y bien trabajada.</figcaption>
             </figure>
             <figure class="gallery-card home-gallery-card" data-reveal>
-              <img src="assets/img/alix-colored-wavy-hair-panama.jpg" alt="Cabello con coloración y ondas definidas como resultado de servicio" loading="lazy" />
+              <img src="/assets/img/alix-colored-wavy-hair-panama.jpg" alt="Cabello con coloración y ondas definidas como resultado de servicio" loading="lazy" />
               <figcaption>Color y profundidad en una referencia más cercana al resultado final que puedes conversar.</figcaption>
             </figure>
           </div>
 
           <div class="button-row centered-actions">
-            <a class="button button-secondary" href="services.html#resultados">Ver resultados en servicios</a>
+            <a class="button button-secondary" href="/services/#resultados">Ver resultados en servicios</a>
           </div>
         </div>
       </section>
@@ -361,7 +366,7 @@
             <p><strong>Horarios:</strong> <span data-booking-note></span></p>
             <div class="button-row">
               <a class="button" data-whatsapp-link target="_blank" rel="noreferrer">Reservar por WhatsApp</a>
-              <a class="button button-secondary" href="contact.html">Ir a contacto</a>
+              <a class="button button-secondary" href="/contact/">Ir a contacto</a>
             </div>
           </div>
 

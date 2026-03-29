@@ -1,13 +1,13 @@
 {
   "name": "Alix Nails & Hair",
   "short_name": "Alix Spa",
-  "start_url": "./index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#f5ede6",
   "theme_color": "#1a1a1a",
   "icons": [
     {
-      "src": "./assets/img/alix-nails-hair-logo.png",
+      "src": "/assets/img/alix-nails-hair-logo.png",
       "sizes": "800x800",
       "type": "image/png"
     }

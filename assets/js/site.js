@@ -3,10 +3,10 @@ const SITE = {
   tagline: "Nail & Hair Spa en Condado Mall",
   description:
     "Alix Nails & Hair es un Nail & Hair Spa en Condado Mall con reservas por WhatsApp, servicios de uñas y cabello, y horarios amplios durante toda la semana.",
-  logoPrimary: "assets/img/alix-nails-hair-logo.png",
-  logoTransparent: "assets/img/alix-nails-hair-logo-transparent.png",
-  heroImage: "assets/img/alix-nail-spa-hero-panama.jpg",
-  nailsImage: "assets/img/alix-manicure-service-panama.jpg",
+  logoPrimary: "/assets/img/alix-nails-hair-logo.png",
+  logoTransparent: "/assets/img/alix-nails-hair-logo-transparent.png",
+  heroImage: "/assets/img/alix-nail-spa-hero-panama.jpg",
+  nailsImage: "/assets/img/alix-manicure-service-panama.jpg",
   phoneRaw: "+50762765890",
   phoneDisplay: "+507 6276-5890",
   whatsapp: "https://wa.me/50762765890",
@@ -23,14 +23,14 @@ const SITE = {
     "Domingo: 10:00 AM a 5:00 PM"
   ],
   navPages: [
-    { href: "index.html", label: "Inicio", page: "home" },
-    { href: "about.html", label: "Nosotros", page: "about" },
-    { href: "services.html", label: "Servicios", page: "services" },
-    { href: "contact.html", label: "Contacto", page: "contact" }
+    { href: "/", label: "Inicio", page: "home" },
+    { href: "/about/", label: "Nosotros", page: "about" },
+    { href: "/services/", label: "Servicios", page: "services" },
+    { href: "/contact/", label: "Contacto", page: "contact" }
   ],
   legalNav: [
-    { href: "policy.html", label: "Política de privacidad", page: "policy" },
-    { href: "terms.html", label: "Términos y condiciones", page: "terms" }
+    { href: "/policy/", label: "Política de privacidad", page: "policy" },
+    { href: "/terms/", label: "Términos y condiciones", page: "terms" }
   ],
   serviceGroups: [
     {
@@ -186,7 +186,7 @@ function sharedActions(page) {
         external: true
       },
       footerSecondary: {
-        href: "services.html",
+        href: "/services/",
         label: "Ver servicios",
         external: false
       }
@@ -195,12 +195,12 @@ function sharedActions(page) {
 
   return {
     header: {
-      href: "booking.html",
+      href: "/booking/",
       label: "Reservar cita",
       external: false
     },
     footerPrimary: {
-      href: "booking.html",
+      href: "/booking/",
       label: "Reservar ahora",
       external: false
     },
@@ -249,7 +249,7 @@ function renderHeader() {
     <a class="skip-link" href="#main-content">Saltar al contenido</a>
     <header class="site-header">
       <div class="container nav-shell">
-        <a class="brand" href="index.html" aria-label="Ir al inicio de ${SITE.name}">
+        <a class="brand" href="/" aria-label="Ir al inicio de ${SITE.name}">
           <img class="brand-logo" src="${SITE.logoPrimary}" alt="Logo de ${SITE.name}" width="72" height="72" />
           <span class="brand-copy">
             <strong>${SITE.name}</strong>
@@ -453,7 +453,7 @@ function renderDynamicSections() {
       <ul class="bullet-list">
         ${group.items.map((item) => `<li>${item}</li>`).join("")}
       </ul>
-      <a class="text-link" href="booking.html">Reservar esta experiencia</a>
+      <a class="text-link" href="/booking/">Reservar esta experiencia</a>
     </article>
   `);
 
