@@ -16,7 +16,7 @@ const SITE = {
   mapLink:
     "https://maps.app.goo.gl/2ExYPQuHKtNivdBj7",
   mapEmbed:
-    "https://www.google.com/maps?q=Centro+Comercial+Condado+Mall&ll=9.0317732,-79.5262464&z=16&output=embed",
+    "https://www.google.com/maps?q=Alix+Nails+%26+Hair,+2FJF%2B8M+Panama+City,+Panama&z=17&output=embed",
   hoursNote: "Lunes a sábado de 9:00 AM a 7:00 PM · Domingo de 10:00 AM a 5:00 PM.",
   hours: [
     "Lunes a sábado: 9:00 AM a 7:00 PM",
