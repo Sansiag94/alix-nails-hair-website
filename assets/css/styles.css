@@ -161,6 +161,26 @@ p {
   overflow-wrap: anywhere;
 }
 
+[data-address],
+.address-link {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+}
+
+[data-address]::before,
+.address-link::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 0.95rem;
+  height: 0.95rem;
+  margin-top: 0.2rem;
+  background: currentColor;
+  opacity: 0.85;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='black' d='M172.3 501.7C26.97 291 0 269.4 0 192 0 85.96 85.96 0 192 0S384 85.96 384 192c0 77.4-26.97 99-172.3 309.7-9.5 13.8-29.9 13.8-39.4 0zM192 272c44.18 0 80-35.82 80-80S236.2 112 192 112 112 147.8 112 192s35.8 80 80 80z'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='black' d='M172.3 501.7C26.97 291 0 269.4 0 192 0 85.96 85.96 0 192 0S384 85.96 384 192c0 77.4-26.97 99-172.3 309.7-9.5 13.8-29.9 13.8-39.4 0zM192 272c44.18 0 80-35.82 80-80S236.2 112 192 112 112 147.8 112 192s35.8 80 80 80z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
 .button-row {
   display: flex;
   flex-wrap: wrap;

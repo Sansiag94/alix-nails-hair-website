@@ -342,7 +342,7 @@ function renderFooter() {
             <li><a href="tel:${SITE.phoneRaw}">${SITE.phoneDisplay}</a></li>
             <li><a href="${SITE.whatsapp}" target="_blank" rel="noreferrer">Escribir por WhatsApp</a></li>
             <li><a href="${SITE.instagram}" target="_blank" rel="noreferrer">Instagram</a></li>
-            <li><a href="${mapUrl()}" target="_blank" rel="noreferrer">${SITE.address}</a></li>
+            <li><a class="address-link" href="${mapUrl()}" target="_blank" rel="noreferrer">${SITE.address}</a></li>
           </ul>
           <div class="footer-hours">
             <h3>Horarios</h3>
