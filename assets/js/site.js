@@ -14,9 +14,9 @@ const SITE = {
     "https://www.instagram.com/alixnailsandhair?igsh=MWZuYjRzMTVmazh3Yw==",
   address: "Centro Comercial Condado Mall, primer piso, local 50.",
   mapLink:
-    "https://www.google.com/maps/place/Centro+Comercial+Condado+Mall/@9.0296458,-79.530813,15.25z/data=!4m6!3m5!1s0x8faca82677e90075:0x881488d5dfb1896!8m2!3d9.0317732!4d-79.5262464!16s%2Fg%2F11f03kbxxv?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D",
+    "https://www.google.com/maps/place/Alix+Nails+%26+Hair/@9.0326156,-79.5269143,20.25z/data=!4m6!3m5!1s0x8faca99e7eda03f5:0xbe7941bfefa9126c!8m2!3d9.0325982!4d-79.5266825!16s%2Fg%2F11z2vypxsd?entry=tts&g_ep=EgoyMDI2MDMyNC4wIPu8ASoASAFQAw%3D%3D&skid=0b9ecab7-bc81-495d-8841-d45bbb1211a2",
   mapEmbed:
-    "https://www.google.com/maps?q=Centro+Comercial+Condado+Mall&ll=9.0317732,-79.5262464&z=16&output=embed",
+    "https://www.google.com/maps?q=Alix+Nails+%26+Hair&ll=9.0325982,-79.5266825&z=18&output=embed",
   hoursNote: "Lunes a sábado de 9:00 AM a 7:00 PM · Domingo de 10:00 AM a 5:00 PM.",
   hours: [
     "Lunes a sábado: 9:00 AM a 7:00 PM",
