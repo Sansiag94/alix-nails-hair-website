@@ -16,7 +16,7 @@ const SITE = {
   mapLink:
     "https://www.google.com/maps/place/Centro+Comercial+Condado+Mall/@9.0296458,-79.530813,15.25z/data=!4m6!3m5!1s0x8faca82677e90075:0x881488d5dfb1896!8m2!3d9.0317732!4d-79.5262464!16s%2Fg%2F11f03kbxxv?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D",
   mapEmbed:
-    "https://www.google.com/maps?q=Alix+Nails+%26+Hair,+2FJF%2B8M+Panama+City,+Panama&z=17&output=embed",
+    "https://www.google.com/maps?q=Centro+Comercial+Condado+Mall&ll=9.0317732,-79.5262464&z=16&output=embed",
   hoursNote: "Lunes a sábado de 9:00 AM a 7:00 PM · Domingo de 10:00 AM a 5:00 PM.",
   hours: [
     "Lunes a sábado: 9:00 AM a 7:00 PM",
@@ -355,15 +355,13 @@ function renderFooter() {
             <h3>Condado Mall</h3>
             <a class="text-link" href="${mapUrl()}" target="_blank" rel="noreferrer">Abrir mapa</a>
           </div>
-          <div class="footer-map-shell location-card">
-            <div class="location-card-inner">
-              <p>Abre la ficha del negocio en Google Maps para ver ruta, guardar el lugar y confirmar el punto exacto.</p>
-              <div class="location-pills">
-                <span>Alix Nails & Hair</span>
-                <span>Centro Comercial Condado Mall</span>
-              </div>
-              <a class="button button-small" href="${mapUrl()}" target="_blank" rel="noreferrer">Abrir en Google Maps</a>
-            </div>
+          <div class="footer-map-shell">
+            <iframe
+              title="Mapa de ${SITE.name}"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="${mapEmbedUrl()}"
+            ></iframe>
           </div>
         </section>
       </div>
@@ -422,6 +420,10 @@ function syncSharedContent() {
 
   selectAll("[data-map-link]").forEach((node) => {
     node.setAttribute("href", mapUrl());
+  });
+
+  selectAll("[data-map-embed]").forEach((node) => {
+    node.setAttribute("src", mapEmbedUrl());
   });
 
 }
