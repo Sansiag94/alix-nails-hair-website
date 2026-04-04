@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,follow" />
+    <title>Page Not Found | Alix Nails & Hair</title>
+    <link rel="canonical" href="https://alixnailsandhair.com/" />
+    <script>
+      (function () {
+        var path = window.location.pathname;
+        var query = window.location.search || "";
+        var hash = window.location.hash || "";
+
+        if (path === "/index.html") {
+          window.location.replace("/" + query + hash);
+          return;
+        }
+
+        if (path.endsWith(".html")) {
+          var cleanPath = path.replace(/\.html$/, "/");
+          window.location.replace(cleanPath + query + hash);
+        }
+      })();
+    </script>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        font-family: Georgia, "Times New Roman", serif;
+        background: #f7f1ea;
+        color: #2f241e;
+      }
+
+      main {
+        max-width: 560px;
+        text-align: center;
+      }
+
+      a {
+        color: #7c4d3a;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Page not found</h1>
+      <p>The page you requested is not available.</p>
+      <p><a href="/">Return to the homepage</a></p>
+    </main>
+  </body>
+</html>
