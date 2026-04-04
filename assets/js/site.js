@@ -1,6 +1,6 @@
 const SITE = {
   name: "Alix Nails & Hair",
-  tagline: "Uñas, cabello y citas por WhatsApp",
+  tagline: "Uñas, cabello y peinados",
   description:
     "Salón de uñas y cabello en Condado Mall para manicure, gel, color, cortes y peinados. Puedes escribir por WhatsApp, ver la ubicación y pedir tu cita sin complicarte.",
   logoPrimary: "/assets/img/alix-nails-hair-logo.png",
