@@ -1,8 +1,8 @@
 const SITE = {
   name: "Alix Nails & Hair",
-  tagline: "Nail & Hair Spa en Condado Mall",
+  tagline: "Uñas, cabello y citas por WhatsApp",
   description:
-    "Alix Nails & Hair es un Nail & Hair Spa en Condado Mall con reservas por WhatsApp, servicios de uñas y cabello, y horarios amplios durante toda la semana.",
+    "Salón de uñas y cabello en Condado Mall para manicure, gel, color, cortes y peinados. Puedes escribir por WhatsApp, ver la ubicación y pedir tu cita sin complicarte.",
   logoPrimary: "/assets/img/alix-nails-hair-logo.png",
   logoTransparent: "/assets/img/alix-nails-hair-logo-transparent.png",
   heroImage: "/assets/img/alix-nail-spa-hero-panama.jpg",
@@ -34,91 +34,91 @@ const SITE = {
   ],
   serviceGroups: [
     {
-      title: "Ritual de uñas",
+      title: "Manos y pies",
       lead:
-        "Un espacio para manicure, maquillaje de uñas y acabados delicados que priorizan limpieza visual, armonía y duración.",
+        "Manicure, pedicure, gel y diseños para quienes quieren un acabado prolijo, limpio y duradero.",
       items: [
         "Manicure y pedicure",
-        "Maquillaje de uñas",
         "Gel y refuerzo",
-        "Nail art personalizado",
-        "Mantenimiento y retoques"
+        "Diseños y nail art",
+        "Mantenimiento",
+        "Retoques"
       ]
     },
     {
-      title: "Cabello con movimiento",
+      title: "Cabello del día a día",
       lead:
-        "Cortes, brushing, secados y peinados pensados para acompañar tu estilo con ligereza, suavidad y presencia.",
+        "Lavado, brushing, corte, secado y peinados para salir arreglada sin complicarte.",
       items: [
-        "Hair styling",
-        "Haircut",
-        "Hair dressing",
-        "Brushing y secados",
+        "Lavado y secado",
+        "Brushing",
+        "Corte",
+        "Peinados",
         "Tratamientos capilares"
       ]
     },
     {
-      title: "Color y ocasión",
+      title: "Color, cambio o evento",
       lead:
-        "Servicios para quienes buscan un cambio visible, preparación para evento o una cita guiada con más personalización.",
+        "Tintes, retoques y servicios que conviene conversar antes para calcular tiempo, idea y disponibilidad.",
       items: [
-        "Hair dyeing y coloración",
+        "Coloración",
         "Retoque de raíz",
-        "Valoración para cambios de look",
+        "Cambios de look",
         "Peinados para eventos",
-        "Maquillaje social sujeto a consulta"
+        "Consulta previa"
       ]
     }
   ],
   values: [
     {
-      title: "Un ritmo sereno",
+      title: "Reserva sin vueltas",
       text:
-        "La experiencia se construye para que reservar, llegar y vivir la cita se sienta claro, cómodo y sin prisa innecesaria."
+        "Puedes escribir por WhatsApp, llamar o usar el formulario para llegar rápido a la disponibilidad real."
     },
     {
-      title: "Detalle que se nota",
+      title: "Tiempo bien explicado",
       text:
-        "Cada acabado busca equilibrio, limpieza visual y una sensación final pulida tanto en uñas como en cabello."
+        "Antes de confirmar, hablamos de horario, duración y si hace falta referencia o valoración previa."
     },
     {
-      title: "Atención cercana",
+      title: "Acabado que se note",
       text:
-        "Escuchamos la idea, revisamos tiempos y acompañamos el proceso para que todo fluya desde el primer mensaje."
+        "Nos importa que manos y cabello se vean limpios, favorecedores y bien terminados, no solo rápidos."
     }
   ],
   process: [
     {
-      title: "Comparte tu idea",
+      title: "Escríbenos",
       text:
-        "Cuéntanos qué servicio te interesa y, si quieres, envía una referencia para orientar mejor la cita."
+        "Cuéntanos qué servicio quieres, si tienes una fecha en mente y si quieres mandar una foto de referencia."
     },
     {
-      title: "Confirmamos horario",
+      title: "Te confirmamos horario",
       text:
-        "Revisamos tu disponibilidad, el tiempo estimado del servicio y cualquier detalle importante antes de confirmar."
+        "Revisamos agenda, tiempo estimado y cualquier detalle importante antes de cerrar la cita."
     },
     {
-      title: "Vive tu momento",
+      title: "Llegas con todo claro",
       text:
-        "La cita se trabaja con calma, atención y un resultado pensado para sentirse tuyo al salir del salón."
+        "Cuando vienes al salón, ya sabes qué se hará, cuánto tomará y cómo encontrar el local en Condado Mall."
     }
   ],
   faq: [
     {
       question: "¿Cómo puedo reservar una cita?",
       answer:
-        "Puedes usar el formulario de reservas o escribir por WhatsApp. La confirmación final siempre se coordina directamente con el spa."
+        "Puedes usar el formulario o escribirnos por WhatsApp. La confirmación final siempre se hace directamente con el salón."
     },
     {
-      question: "¿Puedo pedir orientación antes de reservar?",
+      question: "¿Puedo preguntar antes de reservar?",
       answer:
-        "Sí. Si tienes dudas sobre uñas, color, peinados o mantenimiento, puedes escribirnos y te ayudamos a elegir el servicio adecuado."
+        "Sí. Si no sabes cuál servicio te conviene o quieres enviar una foto de referencia, te orientamos antes de confirmar."
     },
     {
       question: "¿Dónde están ubicados?",
       answer:
-        "Estamos en Condado Mall, primer piso, local 50, con acceso directo al mapa desde el sitio."
+        "Estamos en Condado Mall, primer piso, local 50, y en la web tienes acceso directo al mapa."
     },
     {
       question: "¿Cuáles son sus horarios?",
@@ -130,21 +130,21 @@ const SITE = {
     {
       title: "WhatsApp",
       text:
-        "La forma más directa para pedir disponibilidad, compartir referencias y coordinar tu visita.",
+        "La vía más rápida para pedir disponibilidad, enviar una foto y resolver una duda puntual.",
       href: "https://wa.me/50762765890",
       label: "Escribir por WhatsApp"
     },
     {
       title: "Llamada",
       text:
-        "Si prefieres una conversación inmediata, también puedes comunicarte al número principal.",
+        "Útil si prefieres resolver algo rápido antes de reservar o confirmar cómo llegar.",
       href: "tel:+50762765890",
-      label: "Llamar al spa"
+      label: "Llamar al salón"
     },
     {
       title: "Instagram",
       text:
-        "Explora referencias, acabados y la atmósfera visual del salón antes de tu cita.",
+        "Si quieres ver más acabados, peinados y referencias visuales, este es el mejor lugar.",
       href:
         "https://www.instagram.com/alixnailsandhair?igsh=MWZuYjRzMTVmazh3Yw==",
       label: "Ver Instagram"
@@ -152,7 +152,7 @@ const SITE = {
     {
       title: "Ubicación",
       text:
-        "Visítanos en Condado Mall, primer piso, local 50, con guía directa desde Google Maps.",
+        "Estamos en Condado Mall, primer piso, local 50, con un enlace directo a Google Maps.",
       href: "",
       label: "Abrir mapa"
     }
@@ -368,7 +368,7 @@ function renderFooter() {
 
       <div class="container footer-bottom">
         <small>&copy; ${year} ${SITE.name}. Todos los derechos reservados.</small>
-        <small>Nail & Hair Spa en Condado Mall con horario extendido toda la semana.</small>
+        <small>Manicure, cabello, color y peinados en Condado Mall.</small>
       </div>
     </footer>
 
@@ -425,7 +425,6 @@ function syncSharedContent() {
   selectAll("[data-map-embed]").forEach((node) => {
     node.setAttribute("src", mapEmbedUrl());
   });
-
 }
 
 function populateServiceSelects() {
@@ -453,7 +452,7 @@ function renderDynamicSections() {
       <ul class="bullet-list">
         ${group.items.map((item) => `<li>${item}</li>`).join("")}
       </ul>
-      <a class="text-link" href="/booking/">Reservar esta experiencia</a>
+      <a class="text-link" href="/booking/">Pedir este servicio</a>
     </article>
   `);
 

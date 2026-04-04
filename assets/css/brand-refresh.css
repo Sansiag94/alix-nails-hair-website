@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap");
+
+:root {
+  --color-paper: #f9f3ec;
+  --color-ink: #241816;
+  --color-muted: #675551;
+  --color-accent: #b96445;
+  --color-accent-deep: #7c4a37;
+  --color-olive: #6f755a;
+  --shadow-soft: 0 18px 45px rgba(36, 24, 22, 0.08);
+  --shadow-strong: 0 28px 62px rgba(36, 24, 22, 0.14);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 14% 0%, rgba(234, 208, 197, 0.8), transparent 22%),
+    radial-gradient(circle at 88% 8%, rgba(255, 255, 255, 0.9), transparent 18%),
+    linear-gradient(180deg, #fbf5ee 0%, #f5ede6 52%, #fcf8f4 100%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(124, 74, 55, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124, 74, 55, 0.03) 1px, transparent 1px);
+  background-size: 72px 72px;
+  opacity: 0.32;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.42), transparent 85%);
+}
+
+.section-soft {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 250, 245, 0.82)),
+    radial-gradient(circle at top right, rgba(234, 208, 197, 0.32), transparent 28%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: -0.035em;
+}
+
+.eyebrow {
+  color: var(--color-accent-deep);
+  letter-spacing: 0.2em;
+}
+
+.button {
+  background: linear-gradient(135deg, var(--color-accent-deep), var(--color-accent));
+}
+
+.button-secondary {
+  background: rgba(255, 252, 248, 0.92);
+}
+
+.text-link,
+.service-price,
+.subtle-label {
+  color: var(--color-accent-deep);
+}
+
+.site-header.is-scrolled {
+  background: rgba(251, 245, 238, 0.9);
+  box-shadow: 0 12px 34px rgba(36, 24, 22, 0.08);
+}
+
+.brand-logo {
+  border-radius: 28px 14px 28px 14px;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.brand-copy small {
+  color: var(--color-accent-deep);
+}
+
+.hero-shell {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 48px 48px 18px 48px;
+}
+
+.hero-note {
+  border-radius: 30px 30px 10px 30px;
+}
+
+.hero-card {
+  border-radius: 18px 30px 30px 30px;
+}
+
+.trust-indicator {
+  background: rgba(255, 250, 245, 0.78);
+}
+
+.page-preview-card,
+.service-card,
+.practical-card,
+.channel-card {
+  border-radius: 30px 14px 30px 14px;
+}
+
+.page-preview-card {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.page-preview-card:nth-child(1) {
+  background:
+    linear-gradient(180deg, rgba(234, 208, 197, 0.3), rgba(255, 255, 255, 0.9)),
+    #fffdf9;
+}
+
+.page-preview-card:nth-child(2) {
+  background:
+    linear-gradient(180deg, rgba(111, 117, 90, 0.12), rgba(255, 255, 255, 0.9)),
+    #fffdf9;
+  border-radius: 14px 30px 14px 30px;
+}
+
+.page-preview-card:nth-child(3) {
+  background:
+    linear-gradient(180deg, rgba(185, 100, 69, 0.1), rgba(255, 255, 255, 0.92)),
+    #fffdf9;
+}
+
+.service-card:nth-child(2) {
+  border-radius: 14px 30px 14px 30px;
+}
+
+.cta-band {
+  background:
+    linear-gradient(135deg, rgba(234, 208, 197, 0.65), rgba(255, 250, 245, 0.96)),
+    rgba(255, 255, 255, 0.85);
+}
+
+.practical-grid {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.practical-card {
+  display: grid;
+  gap: 0.85rem;
+  padding: var(--space-3);
+  border: 1px solid rgba(36, 24, 22, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(249, 243, 236, 0.92)),
+    #fffdf9;
+  box-shadow: var(--shadow-soft);
+}
+
+.practical-card:nth-child(2) {
+  border-radius: 14px 30px 14px 30px;
+}
+
+.practical-kicker {
+  color: var(--color-accent-deep);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.floating-whatsapp {
+  background: linear-gradient(135deg, #25d366, #1eb257);
+}
+
+@media (min-width: 720px) {
+  .practical-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 960px) {
+  .page-preview-card:nth-child(2),
+  .service-card:nth-child(2),
+  .practical-card:nth-child(2) {
+    transform: translateY(1rem);
+  }
+
+  .practical-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 719px) {
+  .hero-shell {
+    border-radius: 34px 34px 14px 34px;
+  }
+}
