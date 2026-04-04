@@ -1,8 +1,8 @@
 const SITE = {
   name: "Alix Nails & Hair",
-  tagline: "Uñas, cabello y peinados",
+  tagline: "Uñas, cabello y más.",
   description:
-    "Salón de uñas y cabello en Condado Mall para manicure, gel, color, cortes y peinados. Puedes escribir por WhatsApp, ver la ubicación y pedir tu cita sin complicarte.",
+    "Salón de uñas y cabello en Condado Mall para manicure, gel, color, cortes y peinados, con una atención clara y una ubicación fácil de encontrar.",
   logoPrimary: "/assets/img/alix-nails-hair-logo.png",
   logoTransparent: "/assets/img/alix-nails-hair-logo-transparent.png",
   heroImage: "/assets/img/alix-nail-spa-hero-panama.jpg",
@@ -74,7 +74,7 @@ const SITE = {
     {
       title: "Reserva sin vueltas",
       text:
-        "Puedes escribir por WhatsApp, llamar o usar el formulario para llegar rápido a la disponibilidad real."
+        "Puedes escribirnos, llamar o usar el formulario para llegar rápido a la disponibilidad real."
     },
     {
       title: "Tiempo bien explicado",
@@ -108,7 +108,7 @@ const SITE = {
     {
       question: "¿Cómo puedo reservar una cita?",
       answer:
-        "Puedes usar el formulario o escribirnos por WhatsApp. La confirmación final siempre se hace directamente con el salón."
+        "Puedes usar el formulario o escribirnos directamente. La confirmación final siempre se hace con el salón."
     },
     {
       question: "¿Puedo preguntar antes de reservar?",
@@ -128,11 +128,11 @@ const SITE = {
   ],
   contactChannels: [
     {
-      title: "WhatsApp",
+      title: "Mensaje directo",
       text:
         "La vía más rápida para pedir disponibilidad, enviar una foto y resolver una duda puntual.",
       href: "https://wa.me/50762765890",
-      label: "Escribir por WhatsApp"
+      label: "Escribir"
     },
     {
       title: "Llamada",
@@ -177,12 +177,12 @@ function sharedActions(page) {
     return {
       header: {
         href: SITE.whatsapp,
-        label: "WhatsApp",
+        label: "Escribir",
         external: true
       },
       footerPrimary: {
         href: SITE.whatsapp,
-        label: "WhatsApp",
+        label: "Escribir",
         external: true
       },
       footerSecondary: {
@@ -206,7 +206,7 @@ function sharedActions(page) {
     },
     footerSecondary: {
       href: SITE.whatsapp,
-      label: "WhatsApp",
+      label: "Contacto",
       external: true
     }
   };
@@ -340,7 +340,7 @@ function renderFooter() {
           <h3>Contacto</h3>
           <ul class="footer-links">
             <li><a href="tel:${SITE.phoneRaw}">${SITE.phoneDisplay}</a></li>
-            <li><a href="${SITE.whatsapp}" target="_blank" rel="noreferrer">Escribir por WhatsApp</a></li>
+            <li><a href="${SITE.whatsapp}" target="_blank" rel="noreferrer">Escribir</a></li>
             <li><a href="${SITE.instagram}" target="_blank" rel="noreferrer">Instagram</a></li>
             <li><a class="address-link" href="${mapUrl()}" target="_blank" rel="noreferrer">${SITE.address}</a></li>
           </ul>
@@ -377,9 +377,9 @@ function renderFooter() {
       href="${SITE.whatsapp}"
       target="_blank"
       rel="noreferrer"
-      aria-label="Escribir por WhatsApp con ${SITE.name}"
+      aria-label="Abrir contacto directo con ${SITE.name}"
     >
-      WhatsApp
+      Reservar
     </a>
 
     <div class="mobile-cta" aria-label="Acciones rápidas de reserva">
