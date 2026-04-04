@@ -2,7 +2,7 @@ const SITE = {
   name: "Alix Nails & Hair",
   tagline: "Uñas, cabello y más.",
   description:
-    "Salón de uñas y cabello en Condado Mall para manicure, gel, color, cortes y peinados, con una atención clara y una ubicación fácil de encontrar.",
+    "Salón de uñas y cabello en Condado Mall para manicure, gel, color, cortes y peinados.",
   logoPrimary: "/assets/img/alix-nails-hair-logo.png",
   logoTransparent: "/assets/img/alix-nails-hair-logo-transparent.png",
   heroImage: "/assets/img/alix-nail-spa-hero-panama.jpg",
@@ -36,7 +36,7 @@ const SITE = {
     {
       title: "Manos y pies",
       lead:
-        "Manicure, pedicure, gel y diseños para quienes quieren un acabado prolijo, limpio y duradero.",
+        "Manicure, pedicure, gel y diseños con un acabado limpio, femenino y bien cuidado.",
       items: [
         "Manicure y pedicure",
         "Gel y refuerzo",
@@ -48,7 +48,7 @@ const SITE = {
     {
       title: "Cabello del día a día",
       lead:
-        "Lavado, brushing, corte, secado y peinados para salir arreglada sin complicarte.",
+        "Lavado, brushing, corte y peinados para sentirte arreglada cualquier día de la semana.",
       items: [
         "Lavado y secado",
         "Brushing",
@@ -60,7 +60,7 @@ const SITE = {
     {
       title: "Color, cambio o evento",
       lead:
-        "Tintes, retoques y servicios que conviene conversar antes para calcular tiempo, idea y disponibilidad.",
+        "Color, retoques y cambios de look para renovar tu estilo con intención y buen gusto.",
       items: [
         "Coloración",
         "Retoque de raíz",
@@ -72,53 +72,53 @@ const SITE = {
   ],
   values: [
     {
-      title: "Reserva sin vueltas",
+      title: "Detalle que se nota",
       text:
-        "Puedes escribirnos, llamar o usar el formulario para llegar rápido a la disponibilidad real."
+        "Acabados limpios, pulidos y favorecedores, trabajados con atención en cada servicio."
     },
     {
-      title: "Tiempo bien explicado",
+      title: "Ambiente cercano",
       text:
-        "Antes de confirmar, hablamos de horario, duración y si hace falta referencia o valoración previa."
+        "Un salón donde puedes relajarte, conversar y disfrutar tu momento con calma."
     },
     {
-      title: "Acabado que se note",
+      title: "Estilo con intención",
       text:
-        "Nos importa que manos y cabello se vean limpios, favorecedores y bien terminados, no solo rápidos."
+        "Manos, color y peinados pensados para verte linda, femenina y bien arreglada."
     }
   ],
   process: [
     {
-      title: "Escríbenos",
+      title: "Cuéntanos tu idea",
       text:
-        "Cuéntanos qué servicio quieres, si tienes una fecha en mente y si quieres mandar una foto de referencia."
+        "Puedes compartir el servicio que deseas, una fecha ideal y cualquier referencia que quieras mostrar."
     },
     {
-      title: "Te confirmamos horario",
+      title: "Buscamos el mejor momento",
       text:
-        "Revisamos agenda, tiempo estimado y cualquier detalle importante antes de cerrar la cita."
+        "Revisamos agenda, duración del servicio y los detalles importantes antes de tu visita."
     },
     {
-      title: "Llegas con todo claro",
+      title: "Te recibimos para consentirte",
       text:
-        "Cuando vienes al salón, ya sabes qué se hará, cuánto tomará y cómo encontrar el local en Condado Mall."
+        "La idea es que tu cita se sienta agradable, bien cuidada y a la altura de lo que imaginaste."
     }
   ],
   faq: [
     {
       question: "¿Cómo puedo reservar una cita?",
       answer:
-        "Puedes usar el formulario o escribirnos directamente. La confirmación final siempre se hace con el salón."
+        "Puedes usar el formulario o escribirnos. La confirmación final siempre se hace con el salón."
     },
     {
       question: "¿Puedo preguntar antes de reservar?",
       answer:
-        "Sí. Si no sabes cuál servicio te conviene o quieres enviar una foto de referencia, te orientamos antes de confirmar."
+        "Sí. Si no sabes cuál servicio te conviene o quieres enviar una foto de referencia, con gusto te ayudamos."
     },
     {
       question: "¿Dónde están ubicados?",
       answer:
-        "Estamos en Condado Mall, primer piso, local 50, y en la web tienes acceso directo al mapa."
+        "Estamos en Condado Mall, primer piso, local 50, y en la web tienes el mapa del salón."
     },
     {
       question: "¿Cuáles son sus horarios?",
@@ -128,23 +128,23 @@ const SITE = {
   ],
   contactChannels: [
     {
-      title: "Mensaje directo",
+      title: "Mensaje",
       text:
-        "La vía más rápida para pedir disponibilidad, enviar una foto y resolver una duda puntual.",
+        "Para reservar, consultar disponibilidad o compartir una referencia.",
       href: "https://wa.me/50762765890",
       label: "Escribir"
     },
     {
       title: "Llamada",
       text:
-        "Útil si prefieres resolver algo rápido antes de reservar o confirmar cómo llegar.",
+        "Si prefieres hablar con el salón antes de tu visita.",
       href: "tel:+50762765890",
       label: "Llamar al salón"
     },
     {
       title: "Instagram",
       text:
-        "Si quieres ver más acabados, peinados y referencias visuales, este es el mejor lugar.",
+        "Inspiración, acabados y más del estilo del salón.",
       href:
         "https://www.instagram.com/alixnailsandhair?igsh=MWZuYjRzMTVmazh3Yw==",
       label: "Ver Instagram"
@@ -152,7 +152,7 @@ const SITE = {
     {
       title: "Ubicación",
       text:
-        "Estamos en Condado Mall, primer piso, local 50, con un enlace directo a Google Maps.",
+        "Condado Mall, primer piso, local 50.",
       href: "",
       label: "Abrir mapa"
     }
@@ -377,7 +377,7 @@ function renderFooter() {
       href="${SITE.whatsapp}"
       target="_blank"
       rel="noreferrer"
-      aria-label="Abrir contacto directo con ${SITE.name}"
+      aria-label="Abrir contacto con ${SITE.name}"
     >
       Reservar
     </a>

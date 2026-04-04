@@ -15,29 +15,15 @@ body {
   font-family: "Manrope", sans-serif;
   position: relative;
   overflow-x: hidden;
-  background:
-    radial-gradient(circle at 14% 0%, rgba(234, 208, 197, 0.8), transparent 22%),
-    radial-gradient(circle at 88% 8%, rgba(255, 255, 255, 0.9), transparent 18%),
-    linear-gradient(180deg, #fbf5ee 0%, #f5ede6 52%, #fcf8f4 100%);
+  background: linear-gradient(180deg, #fbf6f0 0%, #f6eee7 52%, #fcfaf7 100%);
 }
 
 body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background-image:
-    linear-gradient(rgba(124, 74, 55, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(124, 74, 55, 0.03) 1px, transparent 1px);
-  background-size: 72px 72px;
-  opacity: 0.32;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.42), transparent 85%);
+  display: none;
 }
 
 .section-soft {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 250, 245, 0.82)),
-    radial-gradient(circle at top right, rgba(234, 208, 197, 0.32), transparent 28%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.52), rgba(255, 250, 245, 0.86));
 }
 
 h1,
@@ -73,7 +59,7 @@ h4 {
 }
 
 .brand-logo {
-  border-radius: 28px 14px 28px 14px;
+  border-radius: 24px;
   background: rgba(255, 255, 255, 0.92);
 }
 
@@ -83,15 +69,15 @@ h4 {
 
 .hero-shell {
   border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 48px 48px 18px 48px;
+  border-radius: 34px;
 }
 
 .hero-note {
-  border-radius: 30px 30px 10px 30px;
+  border-radius: 28px;
 }
 
 .hero-card {
-  border-radius: 18px 30px 30px 30px;
+  border-radius: 28px;
 }
 
 .trust-indicator {
@@ -101,8 +87,14 @@ h4 {
 .page-preview-card,
 .service-card,
 .service-detail,
-.channel-card {
-  border-radius: 30px 14px 30px 14px;
+.channel-card,
+.gallery-card,
+.contact-panel,
+.feature-panel,
+.form-shell,
+.cta-band,
+.studio-panel {
+  border-radius: 28px;
 }
 
 .page-preview-card {
@@ -110,26 +102,20 @@ h4 {
 }
 
 .page-preview-card:nth-child(1) {
-  background:
-    linear-gradient(180deg, rgba(234, 208, 197, 0.3), rgba(255, 255, 255, 0.9)),
-    #fffdf9;
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .page-preview-card:nth-child(2) {
-  background:
-    linear-gradient(180deg, rgba(111, 117, 90, 0.12), rgba(255, 255, 255, 0.9)),
-    #fffdf9;
-  border-radius: 14px 30px 14px 30px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 28px;
 }
 
 .page-preview-card:nth-child(3) {
-  background:
-    linear-gradient(180deg, rgba(185, 100, 69, 0.1), rgba(255, 255, 255, 0.92)),
-    #fffdf9;
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .service-card:nth-child(2) {
-  border-radius: 14px 30px 14px 30px;
+  border-radius: 28px;
 }
 
 .service-detail {
@@ -139,9 +125,7 @@ h4 {
 }
 
 .cta-band {
-  background:
-    linear-gradient(135deg, rgba(234, 208, 197, 0.65), rgba(255, 250, 245, 0.96)),
-    rgba(255, 255, 255, 0.85);
+  background: linear-gradient(135deg, rgba(234, 208, 197, 0.5), rgba(255, 250, 245, 0.94));
 }
 
 .practical-kicker {
@@ -157,7 +141,6 @@ h4 {
   gap: 1.25rem;
   padding: clamp(1.25rem, 3vw, 2rem);
   border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 34px 16px 34px 16px;
   background: rgba(255, 251, 247, 0.9);
   box-shadow: var(--shadow-soft);
   color: var(--color-ink);
@@ -205,7 +188,7 @@ h4 {
 .home-menu-board {
   display: grid;
   border: 1px solid rgba(36, 24, 22, 0.08);
-  border-radius: 36px 16px 36px 16px;
+  border-radius: 28px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(249, 243, 236, 0.92)),
     #fffdf9;
@@ -265,23 +248,6 @@ h4 {
   padding-top: 1rem;
 }
 
-.home-value-layout {
-  align-items: stretch;
-}
-
-.home-value-panel {
-  justify-content: center;
-  padding: clamp(1.5rem, 3vw, 2.25rem);
-  border-radius: 36px 16px 36px 16px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(249, 243, 236, 0.92)),
-    #fffdf9;
-}
-
-.home-value-image {
-  min-height: 100%;
-}
-
 .floating-whatsapp {
   background: linear-gradient(135deg, #25d366, #1eb257);
 }
@@ -289,7 +255,7 @@ h4 {
 @media (min-width: 960px) {
   .page-preview-card:nth-child(2),
   .service-card:nth-child(2) {
-    transform: translateY(1rem);
+    transform: none;
   }
 
   .home-menu-board {
@@ -312,6 +278,6 @@ h4 {
 
 @media (max-width: 719px) {
   .hero-shell {
-    border-radius: 34px 34px 14px 34px;
+    border-radius: 28px;
   }
 }
